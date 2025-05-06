@@ -1,8 +1,8 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
   "meta": {
-    "title": "Block Demo",
-    "description": "Installs plugins to demo blocks.",
+    "title": "Remote Data Blocks Demo",
+    "description": "Installs plugins to demo Remote Data Blocks.",
     "author": "WordPress VIP",
     "categories": [
       "Content"
@@ -19,9 +19,31 @@
   },
   "steps": [
     {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "jetpack"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "jetpack_active_modules": [
+          "blocks",
+          "subscriptions"
+        ]
+      }
+    },
+    {
       "step": "defineWpConfigConsts",
       "consts": {
-        "USE_PLAYGROUND_CORS_PROXY": true
+        "USE_PLAYGROUND_CORS_PROXY": true,
+        "JETPACK_DEBUG": "true",
+        "JETPACK_DEV_DEBUG": "true",
+        "DNS_NS": 0
       }
     },
     {
@@ -37,35 +59,36 @@
       }
     },
     {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/plugins/airtable-demo"
+    },
+    {
       "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/api-monster.php",
+      "path": "/wordpress/wp-content/plugins/airtable-demo/airtable-demo.php",
       "data": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/smithjw1/remote-data-blocks-demo/trunk/api-monster.php"
+        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-demo.php"
       }
     },
     {
       "step": "activatePlugin",
-      "pluginPath": "api-monster.php"
+      "pluginPath": "airtable-demo/airtable-demo.php"
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/plugins/api-monster"
     },
     {
       "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/airtable-demo.php",
+      "path": "/wordpress/wp-content/plugins/api-monster/api-monster.php",
       "data": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/smithjw1/remote-data-blocks-demo/trunk/airtable-demo.php"
+        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/api-monster/api-monster.php"
       }
     },
     {
       "step": "activatePlugin",
-      "pluginPath": "airtable-demo.php"
-    },
-    {
-      "step": "importWxr",
-      "file": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/smithjw1/remote-data-blocks-demo/trunk/content.xml"
-      }
+      "pluginPath": "api-monster/api-monster.php"
     },
     {
       "step": "mkdir",
@@ -76,7 +99,7 @@
       "path": "/wordpress/wp-content/plugins/shopify-demo/ExampleShopifyDataSource.php",
       "data": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/smithjw1/remote-data-blocks-demo/trunk/shopify-demo/ExampleShopifyDataSource.php"
+        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/ExampleShopifyDataSource.php"
       }
     },
     {
@@ -84,7 +107,7 @@
       "path": "/wordpress/wp-content/plugins/shopify-demo/shopify-demo.php",
       "data": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/smithjw1/remote-data-blocks-demo/trunk/shopify-demo/shopify-demo.php"
+        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/shopify-demo.php"
       }
     },
     {

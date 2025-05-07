@@ -3,9 +3,10 @@
 /**
  * Plugin Name: Shopify Demo Integration
  * Description: Integrates with example shop using Remote Data Blocks
+ * Author: WordPress VIP
+ * Author URI: https://remotedatablocks.com/
+ * Text Domain: remote-data-blocks-shopify-demo
  * Version: 1.0.0
- * Author: Your Name
- * License: GPL v2 or later
  */
 
 declare(strict_types=1);
@@ -23,7 +24,6 @@ require_once __DIR__ . '/ExampleShopifyDataSource.php';
 function register_example_shop(): void
 {
     $shopify_data_source = ExampleShopifyDataSource::from_array([
-        'service' => 'shopify',
         'service_config' => [
             '__version' => 1,
             'access_token' => '',  // Not needed for mock shop

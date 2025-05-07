@@ -83,7 +83,8 @@ function register_srd_block(): void
 	]);
 
 	register_remote_data_block([
-		'title' => 'API Monster',
+		'display_name' => 'API Monster',
+		'data_source' => $srd_data_source,
 		'render_query' => [
 			'query' => $get_monster_query,
 		],

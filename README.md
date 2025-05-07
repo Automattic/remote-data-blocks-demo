@@ -2,7 +2,7 @@
 
 This repo use [WordPress Playground](https://playground.wordpress.net/) to provide interactive examples of Remote Data Blocks
 
-[![Launch in WordPress Playground](https://img.shields.io/badge/Launch%20in%20WordPress%20Playground-DA9A45?style=for-the-badge&logo=wordpress)](https://wordpress-playground.atomicsites.blog/?blueprint-url=https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/blueprint-with-jetpack.json)
+[![Launch in WordPress Playground](https://img.shields.io/badge/Launch%20in%20WordPress%20Playground-DA9A45?style=for-the-badge&logo=wordpress)](https://wordpress-playground.atomicsites.blog/?blueprint-url=https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/blueprint.json)
 
 **Note: WordPress Playground sometimes retains state from previous sessions. Opening a new incognito window may be necessary to get a fresh start.**
 

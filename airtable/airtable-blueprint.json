@@ -32,21 +32,23 @@
             }
         },
         {
-            "step": "setSiteOptions",
-            "options": {
-                "jetpack_active_modules": [
-                    "blocks",
-                    "subscriptions"
-                ]
-            }
-        },
-        {
             "step": "defineWpConfigConsts",
             "consts": {
                 "USE_PLAYGROUND_CORS_PROXY": true,
                 "JETPACK_DEBUG": "true",
                 "JETPACK_DEV_DEBUG": "true",
                 "DNS_NS": 0
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "blogname": "Top 100 Albums of 2024",
+                "blogdescription": "from KEXP in Seattle",
+                "jetpack_active_modules": [
+                    "blocks",
+                    "subscriptions"
+                ]
             }
         },
         {

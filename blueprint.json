@@ -57,13 +57,6 @@
         "resource": "url",
         "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
       }
-    },
-    {
-      "step": "importWxr",
-      "file": {
-        "resource": "vfs",
-        "path": "/wordpress/wp-content/plugins/airtable/airtable-content.xml"
-      }
     }
   ]
 }

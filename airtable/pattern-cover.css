@@ -1,0 +1,57 @@
+.wp-block-remote-data-blocks-kexp-top-100-2024.rdb-container ul.remote-data-blocks-loop-template,
+.wp-block-remote-data-blocks-kexp-top-100-2024.rdb-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-left: 0; /* Reset default ul padding / safe for div */
+  list-style: none; /* Remove list bullets / safe for div */
+}
+
+.wp-block-remote-data-blocks-kexp-top-100-2024.rdb-container ul.remote-data-blocks-loop-template > li,
+.wp-block-remote-data-blocks-kexp-top-100-2024.rdb-container > .wp-block-group.cover-art-only {
+  flex-grow: 1;
+  flex-basis: 0; /* Each item will grow from a base of 0, sharing space equally */
+  min-width: 200px; /* Each flex item (li or group) will have a minimum width */
+}
+
+.wp-block-group.cover-art-only .wp-block-columns {
+  position: relative;
+}
+
+/* 1. Image Column adjustments */
+.wp-block-group.cover-art-only .wp-block-columns .wp-block-column:nth-child(1) {
+  width: 100%; /* Ensure it takes full width now that sibling is out of flow */
+  flex-basis: auto !important; /* Override inline styles if necessary */
+  padding: 0; /* Assuming no padding needed directly on this column */
+}
+
+.wp-block-group.cover-art-only .wp-block-columns .wp-block-column:nth-child(1) img {
+  display: block; /* Remove extra space below image */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* 2. Heading Column adjustments */
+.wp-block-group.cover-art-only .wp-block-columns .wp-block-column:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Make this column overlay the image column area */
+  padding: 0; /* Reset padding as its child (heading) will handle its own */
+  pointer-events: none; /* Allow clicks to go through to the image, unless on the heading itself */
+}
+
+/* 3. Heading adjustments (mostly ensuring pointer-events) */
+.wp-block-group.cover-art-only .wp-block-columns .wp-block-column:nth-child(2) .wp-block-heading {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0;
+  z-index: 10;
+  pointer-events: auto; /* Make the heading itself interactive */
+}

@@ -1,0 +1,117 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "meta": {
+        "title": "KEXP Top 100 Demo",
+        "description": "Installs plugins to demo Remote Data Blocks.",
+        "author": "WordPress VIP",
+        "categories": [
+            "Content"
+        ]
+    },
+    "features": {
+        "networking": true
+    },
+    "landingPage": "/?page_id=2",
+    "login": true,
+    "preferredVersions": {
+        "php": "8.2",
+        "wp": "latest"
+    },
+    "steps": [
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "jetpack"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "jetpack_active_modules": [
+                    "blocks",
+                    "subscriptions"
+                ]
+            }
+        },
+        {
+            "step": "defineWpConfigConsts",
+            "consts": {
+                "USE_PLAYGROUND_CORS_PROXY": true,
+                "JETPACK_DEBUG": "true",
+                "JETPACK_DEV_DEBUG": "true",
+                "DNS_NS": 0
+            }
+        },
+        {
+            "step": "installPlugin",
+            "options": {
+                "activate": true,
+                "targetFolderName": "remote-data-blocks"
+            },
+            "pluginData": {
+                "caption": "Installing Remote Data Blocks",
+                "resource": "url",
+                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+            }
+        },
+        {
+            "step": "mkdir",
+            "path": "/wordpress/wp-content/plugins/airtable-demo"
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/airtable-demo/airtable-demo.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-demo.php"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/airtable-demo/pattern-cover.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/pattern-cover.html"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/airtable-demo/pattern-cover.css",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/pattern-cover.css"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/airtable-demo/pattern-spotify-link.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/pattern-spotify-link.html"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/airtable-demo/pattern-list.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/pattern-list.html"
+            }
+        },
+        {
+            "step": "activatePlugin",
+            "pluginPath": "airtable-demo/airtable-demo.php"
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-content.xml"
+            }
+        }
+    ]
+}

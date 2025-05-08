@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.1" created="2025-05-08 19:01" -->
+	<!-- generator="WordPress/6.8.1" created="2025-05-08 20:03" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>remote-data-blocks</title>
 	<link>http://localhost:8888</link>
 	<description></description>
-	<pubDate>Thu, 08 May 2025 19:01:46 +0000</pubDate>
+	<pubDate>Thu, 08 May 2025 20:03:29 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888</wp:base_site_url>
@@ -192,155 +192,6 @@
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[17]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Privacy Policy]]></title>
-		<link>http://localhost:8888/?page_id=3</link>
-		<pubDate>Wed, 07 May 2025 23:11:00 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/?page_id=3</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:heading -->
-<h2 class="wp-block-heading">Who we are</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://localhost:8888.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Comments</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Media</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Cookies</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Embedded content from other websites</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Who we share your data with</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">How long we retain your data</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">What rights you have over your data</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Where your data is sent</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p>
-<!-- /wp:paragraph -->
-]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>3</wp:post_id>
-		<wp:post_date><![CDATA[2025-05-07 23:11:00]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2025-05-07 23:11:00]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-05-08 17:01:07]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-05-08 17:01:07]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-policy__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1746723667]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[privacy-policy]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044]]></title>
-		<link>http://localhost:8888/?attachment_id=17</link>
-		<pubDate>Thu, 08 May 2025 16:52:43 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/wp-content/uploads/2025/05/Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>17</wp:post_id>
-		<wp:post_date><![CDATA[2025-05-08 16:52:43]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2025-05-08 16:52:43]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-05-08 16:52:43]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-05-08 16:52:43]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[ty_segall_-_promo_1_by_den_e_segall-1392x1044]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>2</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://localhost:8888/wp-content/uploads/2025/05/Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1.jpg]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2025/05/Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1.jpg]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:1392;s:6:"height";i:1044;s:4:"file";s:59:"2025/05/Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1.jpg";s:8:"filesize";i:786399;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:59:"Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1-300x225.jpg";s:5:"width";i:300;s:6:"height";i:225;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:587414;}s:5:"large";a:5:{s:4:"file";s:60:"Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1-1024x768.jpg";s:5:"width";i:1024;s:6:"height";i:768;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:695416;}s:9:"thumbnail";a:5:{s:4:"file";s:59:"Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:577221;}s:12:"medium_large";a:5:{s:4:"file";s:59:"Ty_Segall_-_promo_1_by_Den_e_Segall-1392x1044-1-768x576.jpg";s:5:"width";i:768;s:6:"height";i:576;s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";i:648660;}}s:10:"image_meta";a:12:{s:8:"aperture";s:2:"14";s:6:"credit";s:0:"";s:6:"camera";s:5:"X100V";s:7:"caption";s:0:"";s:17:"created_timestamp";s:10:"1682769436";s:9:"copyright";s:0:"";s:12:"focal_length";s:2:"23";s:3:"iso";s:4:"3200";s:13:"shutter_speed";s:16:"0.22222222222222";s:5:"title";s:0:"";s:11:"orientation";s:1:"1";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>

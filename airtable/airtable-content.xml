@@ -95,7 +95,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://localhost:8888/?page_id=20">View the full list</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="../kexp-top-100">View the full list</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 

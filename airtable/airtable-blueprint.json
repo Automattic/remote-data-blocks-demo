@@ -19,6 +19,9 @@
     },
     "steps": [
         {
+            "step": "resetData"
+        },
+        {
             "step": "installPlugin",
             "pluginData": {
                 "resource": "wordpress.org/plugins",

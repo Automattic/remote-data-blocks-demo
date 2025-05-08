@@ -19,6 +19,13 @@ use RemoteDataBlocks\WpdbStorage\DataSourceCrud;
 use RemoteDataBlocks\Config\Query\HttpQuery;
 
 function register_airtable(): void {    
+    // Register the stylesheet so it's known to WordPress
+    wp_register_style(
+        'rdb-kexp-cover-style',
+        plugin_dir_url( __FILE__ ) . 'pattern-cover.css',
+        array(),
+        filemtime( plugin_dir_path( __FILE__ ) . 'pattern-cover.css' )
+    );
     
     $access_token = base64_decode('cGF0YXRRMVZzb3M5dWRsVjQuYmZjZmU3ZThjYmQ0OGMyOTIxMzFmMmIxMzgyOWFiY2ViMTkyMGZjOGY4NGM3YjAwZWZhZDlkMDdmNDIzMjI1OQ==');
     $base_id = 'appsURUQQ9rdXTiHd';
@@ -125,7 +132,7 @@ function register_airtable(): void {
 
 	$list_query = HttpQuery::from_array( [
 		'data_source' => $data_source,
-		'endpoint' => $data_source->get_endpoint() . '/tblAJRx2nL9dymoS3',
+		'endpoint' => $data_source->get_endpoint() . '/tblAJRx2nL9dymoS3?view=viwa0BdzTWkcXWyUp',
 		'input_schema' => [],
 		'output_schema' => [
 			'is_collection' => true,
@@ -150,17 +157,7 @@ function register_airtable(): void {
 					'name' => 'Album',
 					'path' => '$.fields["Album"]',
 					'type' => 'string',
-				],
-				'Album Art URL' => [
-					'name' => 'Album Art URL',
-					'path' => '$.fields["Album Art URL"]',
-					'type' => 'image_url',
-				],
-				'Spotify Artist URL' => [
-					'name' => 'Spotify Artist URL',
-					'path' => '$.fields["Spotify Artist URL"]',
-					'type' => 'button_url',
-				],
+				]
 			],
 		],
 	] );
@@ -172,8 +169,12 @@ function register_airtable(): void {
 		],
         'patterns' => [
             [
-                'title' => 'KEXP Top 100',
-                'html' => file_get_contents( __DIR__ . '/pattern.html' ),
+                'title' => 'KEXP Top 100 Cover',
+                'html' => file_get_contents( __DIR__ . '/pattern-cover.html' ),
+            ],
+            [
+                'title' => 'KEXP Top 100 Spotify Link',
+                'html' => file_get_contents( __DIR__ . '/pattern-spotify-link.html' ),
             ],
         ],
 		'selection_queries' => [
@@ -191,8 +192,8 @@ function register_airtable(): void {
 		],
         'patterns' => [
             [
-                'title' => 'KEXP Top 100 Loop',
-                'html' => file_get_contents( __DIR__ . '/pattern.html' ),
+                'title' => 'KEXP Top 100 Listing',
+                'html' => file_get_contents( __DIR__ . '/pattern-list.html' ),
             ],
         ],
 	] );
@@ -201,3 +202,11 @@ function register_airtable(): void {
 
 add_action( 'init', __NAMESPACE__ . '\\register_airtable' );
 
+/**
+ * Enqueues the shared stylesheet for the KEXP blocks (frontend and editor).
+ */
+function enqueue_kexp_shared_block_assets(): void {
+    // Enqueue the style that was registered in register_airtable().
+    wp_enqueue_style( 'rdb-kexp-cover-style' );
+}
+add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_kexp_shared_block_assets' );

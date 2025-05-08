@@ -6,6 +6,10 @@ This repo use [WordPress Playground](https://playground.wordpress.net/) to provi
 
 **Note: WordPress Playground sometimes retains state from previous sessions. Opening a new incognito window may be necessary to get a fresh start.**
 
+## Use cases
+
+* [Top Albums of the year](https://wordpress-playground.atomicsites.blog/?blueprint-url=https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-blueprint.json)
+
 Remote Data Blocks is a WordPress plugin that makes it easy to combine content and remote data in the block editor. Easily register blocks that load data from Airtable, Google Sheets, Shopify, GitHub, or any other API. [Read more about well-supported use cases](https://github.com/Automattic/remote-data-blocks).
 
 A [simple plugin](./api-monster.php) is included to demonstrate the use of remote data blocks. It also loads information about monsters from the open-source rules of Dungeons and Dragons.

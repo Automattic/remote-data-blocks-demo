@@ -107,11 +107,23 @@
             "pluginPath": "airtable-demo/airtable-demo.php"
         },
         {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/ty-segall-promo.jpg",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/ty-segall-promo.jpg"
+            }
+        },
+        {
             "step": "importWxr",
             "file": {
                 "resource": "url",
                 "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-content.xml"
             }
+        },
+        {
+            "step": "wp-cli",
+            "command": "wp media import wordpress/wp-content/ty-segall-promo.jpg --post_id=2 --title='As photographed by Denée Segall' --featured_image"
         }
     ]
 }

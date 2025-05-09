@@ -33,9 +33,6 @@ if ( ! is_wp_error( $response ) ) {
 	}, $response['results'] );
 }
 
-//$coordinates = [["x" => 46.188567, "y" => -123.830123, "name" => "Car 1"]];
-
-
 ?>
 <div
 	<?php echo get_block_wrapper_attributes(); ?>

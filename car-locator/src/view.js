@@ -2,49 +2,6 @@ import domReady from '@wordpress/dom-ready';
 
 /* global document, leaflet */
 
-// Define icons for different vehicle types
-const reservedIcon = new leaflet.Icon({
-	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
-	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-	iconSize: [25, 41],
-	iconAnchor: [12, 41],
-	popupAnchor: [1, -34],
-	shadowSize: [41, 41]
-});
-
-const inUseIcon = new leaflet.Icon({
-	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-	iconSize: [25, 41],
-	iconAnchor: [12, 41],
-	popupAnchor: [1, -34],
-	shadowSize: [41, 41]
-});
-
-const availableIcon = new leaflet.Icon({
-	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-	iconSize: [25, 41],
-	iconAnchor: [12, 41],
-	popupAnchor: [1, -34],
-	shadowSize: [41, 41]
-});
-
-const defaultIcon = new leaflet.Icon({
-	iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
-	shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-	iconSize: [25, 41],
-	iconAnchor: [12, 41],
-	popupAnchor: [1, -34],
-	shadowSize: [41, 41]
-});
-
-const vehicleIcons = {
-	'reserved': reservedIcon,
-	'available': availableIcon,
-	'in use': inUseIcon,
-};
-
 export function initMaps(mapElements) {
 	mapElements.forEach(element => {
 		const data = element?.dataset.mapCoordinates ?? '';
@@ -59,6 +16,49 @@ export function initMaps(mapElements) {
 		// Ensure leaflet is available and coordinates[0] exists before setting vie
 		const map = leaflet.map(element).setView([coordinates[0].x, coordinates[0].y], 13); // Adjusted zoom
 		const layerGroup = leaflet.layerGroup().addTo(map);
+
+		// Define icons for different vehicle types
+		const reservedIcon = new leaflet.Icon({
+			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+			shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [1, -34],
+			shadowSize: [41, 41]
+		});
+
+		const inUseIcon = new leaflet.Icon({
+			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+			shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [1, -34],
+			shadowSize: [41, 41]
+		});
+
+		const availableIcon = new leaflet.Icon({
+			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+			shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [1, -34],
+			shadowSize: [41, 41]
+		});
+
+		const defaultIcon = new leaflet.Icon({
+			iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
+			shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [1, -34],
+			shadowSize: [41, 41]
+		});
+
+		const vehicleIcons = {
+			'reserved': reservedIcon,
+			'available': availableIcon,
+			'in use': inUseIcon,
+		};
 
 		leaflet
 			.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

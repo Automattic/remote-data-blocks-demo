@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Car Locator
+ * Plugin Name: Car Locator Mock API
  * Description: Provides a REST API endpoint for car location data.
  * Version: 1.0
- * Author: Cascade AI
+ * Author: WordPress VIP and Cascade AI
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

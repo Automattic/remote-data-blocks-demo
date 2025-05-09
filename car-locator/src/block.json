@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rdb-demo/car-map",
+  "version": "1.0.0",
+  "title": "Car Map",
+  "icon": "location-alt",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "rdb-demo",
+  "editorScript": [
+    "file:./index.js",
+    "leaflet-script"
+  ],
+  "editorStyle": [
+    "leaflet-style"
+  ],
+  "render": "file:./render.php",
+  "viewScript": [
+    "file:./view.js",
+    "leaflet-script"
+  ],
+  "viewStyle": [
+    "leaflet-style"
+  ]
+}

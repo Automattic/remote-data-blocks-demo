@@ -23,6 +23,7 @@ if ( ! is_wp_error( $response ) ) {
 	$coordinates = array_map( function ( $value ) {
 		$result = $value['result'];
 		return [
+			'id' => $result['id']['value'],
 			'x' => $result['latitude']['value'],
 			'y' => $result['longitude']['value'],
 			'type' => $result['vehicle_type']['value'],

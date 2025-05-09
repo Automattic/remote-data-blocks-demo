@@ -51,7 +51,7 @@ function register_leaflet_map_block(): void {
 				'id' => [
 					'name' => 'ID',
 					'path' => '$.id',
-					'type' => 'string',
+					'type' => 'integer',
 				],
 				'latitude' => [
 					'name' => 'Latitude',

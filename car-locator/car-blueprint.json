@@ -83,7 +83,7 @@
             "step": "unzip",
             "zipFile": {
                 "resource": "url",
-                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/build/car-locator.zip"
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/car-locator.zip"
             },
             "extractToPath": "/wordpress/wp-content/plugins/car-locator/build"
         },

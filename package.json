@@ -7,9 +7,11 @@
   "license": "GPL-2.0-or-later",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:map": "wp-scripts build --experimental-modules --config=car-locator/webpack.config.js --output-path=car-locator/build --webpack-src-dir=car-locator/src"
+    "build:map": "wp-scripts build --experimental-modules --config=car-locator/webpack.config.js --output-path=car-locator/build --webpack-src-dir=car-locator/src",
+    "package:map": "npm run build:map && npm-build-zip --source=./car-locator/build --destination=car-locator --name=car-locator --name_only=true"
   },
   "devDependencies": {
-    "@wordpress/scripts": "30.1.0"
+    "@wordpress/scripts": "30.1.0",
+    "npm-build-zip": "^1.0.4"
   }
 }

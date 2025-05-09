@@ -2,8 +2,8 @@
   {
     "id": 1,
     "coordinates": {
-      "latitude": 46.188567,
-      "longitude": -123.830123
+      "latitude": 46.179749,
+      "longitude": -123.824441
     },
     "vehicle_type": "SUV",
     "charge_percentage": 75,
@@ -12,8 +12,8 @@
   {
     "id": 2,
     "coordinates": {
-      "latitude": 46.190012,
-      "longitude": -123.831567
+      "latitude": 46.181341,
+      "longitude": -123.822416
     },
     "vehicle_type": "Car",
     "charge_percentage": 45,
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "coordinates": {
-      "latitude": 46.185432,
-      "longitude": -123.828789
+      "latitude": 46.180296,
+      "longitude": -123.820281
     },
     "vehicle_type": "Truck",
     "charge_percentage": 90,
@@ -32,8 +32,8 @@
   {
     "id": 4,
     "coordinates": {
-      "latitude": 46.189765,
-      "longitude": -123.832345
+      "latitude": 46.182281,
+      "longitude": -123.825851
     },
     "vehicle_type": "Car",
     "charge_percentage": 60,
@@ -42,8 +42,8 @@
   {
     "id": 5,
     "coordinates": {
-      "latitude": 46.186987,
-      "longitude": -123.829901
+      "latitude": 46.180907,
+      "longitude": -123.830559
     },
     "vehicle_type": "SUV",
     "charge_percentage": 22,
@@ -52,8 +52,8 @@
   {
     "id": 6,
     "coordinates": {
-      "latitude": 46.191234,
-      "longitude": -123.833678
+      "latitude": 46.178318,
+      "longitude": -123.827491
     },
     "vehicle_type": "Car",
     "charge_percentage": 88,
@@ -62,8 +62,8 @@
   {
     "id": 7,
     "coordinates": {
-      "latitude": 46.184001,
-      "longitude": -123.827543
+      "latitude": 46.178371,
+      "longitude": -123.830957
     },
     "vehicle_type": "Truck",
     "charge_percentage": 99,
@@ -72,8 +72,8 @@
   {
     "id": 8,
     "coordinates": {
-      "latitude": 46.192345,
-      "longitude": -123.834789
+      "latitude": 46.178113,
+      "longitude": -123.835511
     },
     "vehicle_type": "SUV",
     "charge_percentage": 15,
@@ -82,8 +82,8 @@
   {
     "id": 9,
     "coordinates": {
-      "latitude": 46.187654,
-      "longitude": -123.830012
+      "latitude": 46.178111,
+      "longitude": -123.828293
     },
     "vehicle_type": "Car",
     "charge_percentage": 50,
@@ -92,8 +92,8 @@
   {
     "id": 10,
     "coordinates": {
-      "latitude": 46.185,
-      "longitude": -123.828001
+      "latitude": 46.178124,
+      "longitude": -123.831281
     },
     "vehicle_type": "Truck",
     "charge_percentage": 70,
@@ -102,8 +102,8 @@
   {
     "id": 11,
     "coordinates": {
-      "latitude": 46.1905,
-      "longitude": -123.8318
+      "latitude": 46.181922,
+      "longitude": -123.82277
     },
     "vehicle_type": "Car",
     "charge_percentage": 33,
@@ -112,8 +112,8 @@
   {
     "id": 12,
     "coordinates": {
-      "latitude": 46.1865,
-      "longitude": -123.8295
+      "latitude": 46.181347,
+      "longitude": -123.831397
     },
     "vehicle_type": "SUV",
     "charge_percentage": 100,
@@ -122,8 +122,8 @@
   {
     "id": 13,
     "coordinates": {
-      "latitude": 46.1918,
-      "longitude": -123.834
+      "latitude": 46.181999,
+      "longitude": -123.83741
     },
     "vehicle_type": "Car",
     "charge_percentage": 5,
@@ -132,8 +132,8 @@
   {
     "id": 14,
     "coordinates": {
-      "latitude": 46.1835,
-      "longitude": -123.827
+      "latitude": 46.174104,
+      "longitude": -123.824029
     },
     "vehicle_type": "Truck",
     "charge_percentage": 65,
@@ -142,8 +142,8 @@
   {
     "id": 15,
     "coordinates": {
-      "latitude": 46.1928,
-      "longitude": -123.835
+      "latitude": 46.182286,
+      "longitude": -123.830096
     },
     "vehicle_type": "SUV",
     "charge_percentage": 80,
@@ -152,8 +152,8 @@
   {
     "id": 16,
     "coordinates": {
-      "latitude": 46.188,
-      "longitude": -123.8305
+      "latitude": 46.175445,
+      "longitude": -123.836935
     },
     "vehicle_type": "Car",
     "charge_percentage": 20,
@@ -162,8 +162,8 @@
   {
     "id": 17,
     "coordinates": {
-      "latitude": 46.1852,
-      "longitude": -123.8282
+      "latitude": 46.181575,
+      "longitude": -123.82462
     },
     "vehicle_type": "Truck",
     "charge_percentage": 95,
@@ -172,8 +172,8 @@
   {
     "id": 18,
     "coordinates": {
-      "latitude": 46.1908,
-      "longitude": -123.832
+      "latitude": 46.177115,
+      "longitude": -123.823011
     },
     "vehicle_type": "Car",
     "charge_percentage": 55,
@@ -182,8 +182,8 @@
   {
     "id": 19,
     "coordinates": {
-      "latitude": 46.186,
-      "longitude": -123.829
+      "latitude": 46.179676,
+      "longitude": -123.845497
     },
     "vehicle_type": "SUV",
     "charge_percentage": 40,
@@ -192,8 +192,8 @@
   {
     "id": 20,
     "coordinates": {
-      "latitude": 46.1915,
-      "longitude": -123.8335
+      "latitude": 46.181526,
+      "longitude": -123.838037
     },
     "vehicle_type": "Car",
     "charge_percentage": 78,
@@ -202,8 +202,8 @@
   {
     "id": 21,
     "coordinates": {
-      "latitude": 46.183,
-      "longitude": -123.8265
+      "latitude": 46.176365,
+      "longitude": -123.836274
     },
     "vehicle_type": "Truck",
     "charge_percentage": 10,
@@ -212,8 +212,8 @@
   {
     "id": 22,
     "coordinates": {
-      "latitude": 46.193,
-      "longitude": -123.8355
+      "latitude": 46.182244,
+      "longitude": -123.833243
     },
     "vehicle_type": "SUV",
     "charge_percentage": 68,
@@ -222,8 +222,8 @@
   {
     "id": 23,
     "coordinates": {
-      "latitude": 46.187,
-      "longitude": -123.8302
+      "latitude": 46.180892,
+      "longitude": -123.834166
     },
     "vehicle_type": "Car",
     "charge_percentage": 85,
@@ -232,8 +232,8 @@
   {
     "id": 24,
     "coordinates": {
-      "latitude": 46.1848,
-      "longitude": -123.8278
+      "latitude": 46.175403,
+      "longitude": -123.845041
     },
     "vehicle_type": "Truck",
     "charge_percentage": 30,
@@ -242,8 +242,8 @@
   {
     "id": 25,
     "coordinates": {
-      "latitude": 46.1902,
-      "longitude": -123.8312
+      "latitude": 46.176492,
+      "longitude": -123.836261
     },
     "vehicle_type": "Car",
     "charge_percentage": 92,
@@ -252,8 +252,8 @@
   {
     "id": 26,
     "coordinates": {
-      "latitude": 46.1862,
-      "longitude": -123.8292
+      "latitude": 46.179925,
+      "longitude": -123.844168
     },
     "vehicle_type": "SUV",
     "charge_percentage": 18,
@@ -262,8 +262,8 @@
   {
     "id": 27,
     "coordinates": {
-      "latitude": 46.192,
-      "longitude": -123.8342
+      "latitude": 46.180376,
+      "longitude": -123.830853
     },
     "vehicle_type": "Car",
     "charge_percentage": 50,
@@ -272,8 +272,8 @@
   {
     "id": 28,
     "coordinates": {
-      "latitude": 46.1838,
-      "longitude": -123.8268
+      "latitude": 46.179065,
+      "longitude": -123.842247
     },
     "vehicle_type": "Truck",
     "charge_percentage": 77,
@@ -282,8 +282,8 @@
   {
     "id": 29,
     "coordinates": {
-      "latitude": 46.1932,
-      "longitude": -123.8358
+      "latitude": 46.181533,
+      "longitude": -123.828062
     },
     "vehicle_type": "SUV",
     "charge_percentage": 35,
@@ -292,8 +292,8 @@
   {
     "id": 30,
     "coordinates": {
-      "latitude": 46.1872,
-      "longitude": -123.8308
+      "latitude": 46.180753,
+      "longitude": -123.837831
     },
     "vehicle_type": "Car",
     "charge_percentage": 60,
@@ -302,8 +302,8 @@
   {
     "id": 31,
     "coordinates": {
-      "latitude": 46.1855,
-      "longitude": -123.8285
+      "latitude": 46.17348,
+      "longitude": -123.82828
     },
     "vehicle_type": "Truck",
     "charge_percentage": 82,
@@ -312,8 +312,8 @@
   {
     "id": 32,
     "coordinates": {
-      "latitude": 46.191,
-      "longitude": -123.8325
+      "latitude": 46.175478,
+      "longitude": -123.837347
     },
     "vehicle_type": "Car",
     "charge_percentage": 47,
@@ -322,8 +322,8 @@
   {
     "id": 33,
     "coordinates": {
-      "latitude": 46.1868,
-      "longitude": -123.8298
+      "latitude": 46.182017,
+      "longitude": -123.821943
     },
     "vehicle_type": "SUV",
     "charge_percentage": 93,
@@ -332,8 +332,8 @@
   {
     "id": 34,
     "coordinates": {
-      "latitude": 46.1925,
-      "longitude": -123.8345
+      "latitude": 46.18093,
+      "longitude": -123.841165
     },
     "vehicle_type": "Car",
     "charge_percentage": 12,
@@ -342,8 +342,8 @@
   {
     "id": 35,
     "coordinates": {
-      "latitude": 46.1842,
-      "longitude": -123.8272
+      "latitude": 46.176832,
+      "longitude": -123.822786
     },
     "vehicle_type": "Truck",
     "charge_percentage": 71,
@@ -352,8 +352,8 @@
   {
     "id": 36,
     "coordinates": {
-      "latitude": 46.1935,
-      "longitude": -123.836
+      "latitude": 46.176836,
+      "longitude": -123.829619
     },
     "vehicle_type": "SUV",
     "charge_percentage": 53,
@@ -362,8 +362,8 @@
   {
     "id": 37,
     "coordinates": {
-      "latitude": 46.1878,
-      "longitude": -123.831
+      "latitude": 46.180269,
+      "longitude": -123.83627
     },
     "vehicle_type": "Car",
     "charge_percentage": 27,
@@ -372,8 +372,8 @@
   {
     "id": 38,
     "coordinates": {
-      "latitude": 46.1858,
-      "longitude": -123.8288
+      "latitude": 46.176707,
+      "longitude": -123.838751
     },
     "vehicle_type": "Truck",
     "charge_percentage": 66,
@@ -382,8 +382,8 @@
   {
     "id": 39,
     "coordinates": {
-      "latitude": 46.1912,
-      "longitude": -123.8328
+      "latitude": 46.180225,
+      "longitude": -123.846445
     },
     "vehicle_type": "Car",
     "charge_percentage": 89,
@@ -392,8 +392,8 @@
   {
     "id": 40,
     "coordinates": {
-      "latitude": 46.186123,
-      "longitude": -123.829123
+      "latitude": 46.173766,
+      "longitude": -123.836358
     },
     "vehicle_type": "SUV",
     "charge_percentage": 3,
@@ -402,8 +402,8 @@
   {
     "id": 41,
     "coordinates": {
-      "latitude": 46.192123,
-      "longitude": -123.834123
+      "latitude": 46.173601,
+      "longitude": -123.825967
     },
     "vehicle_type": "Car",
     "charge_percentage": 44,
@@ -412,8 +412,8 @@
   {
     "id": 42,
     "coordinates": {
-      "latitude": 46.184123,
-      "longitude": -123.827123
+      "latitude": 46.180163,
+      "longitude": -123.82347
     },
     "vehicle_type": "Truck",
     "charge_percentage": 58,
@@ -422,8 +422,8 @@
   {
     "id": 43,
     "coordinates": {
-      "latitude": 46.193123,
-      "longitude": -123.835123
+      "latitude": 46.177144,
+      "longitude": -123.840136
     },
     "vehicle_type": "SUV",
     "charge_percentage": 79,
@@ -432,8 +432,8 @@
   {
     "id": 44,
     "coordinates": {
-      "latitude": 46.187123,
-      "longitude": -123.830123
+      "latitude": 46.17626,
+      "longitude": -123.835741
     },
     "vehicle_type": "Car",
     "charge_percentage": 23,
@@ -442,8 +442,8 @@
   {
     "id": 45,
     "coordinates": {
-      "latitude": 46.185123,
-      "longitude": -123.828123
+      "latitude": 46.1811,
+      "longitude": -123.829189
     },
     "vehicle_type": "Truck",
     "charge_percentage": 98,
@@ -452,8 +452,8 @@
   {
     "id": 46,
     "coordinates": {
-      "latitude": 46.190123,
-      "longitude": -123.831123
+      "latitude": 46.179244,
+      "longitude": -123.829469
     },
     "vehicle_type": "Car",
     "charge_percentage": 11,
@@ -462,8 +462,8 @@
   {
     "id": 47,
     "coordinates": {
-      "latitude": 46.186623,
-      "longitude": -123.829623
+      "latitude": 46.174196,
+      "longitude": -123.82818
     },
     "vehicle_type": "SUV",
     "charge_percentage": 67,
@@ -472,8 +472,8 @@
   {
     "id": 48,
     "coordinates": {
-      "latitude": 46.191623,
-      "longitude": -123.833623
+      "latitude": 46.175193,
+      "longitude": -123.845151
     },
     "vehicle_type": "Car",
     "charge_percentage": 31,
@@ -482,8 +482,8 @@
   {
     "id": 49,
     "coordinates": {
-      "latitude": 46.183623,
-      "longitude": -123.826623
+      "latitude": 46.17875,
+      "longitude": -123.832741
     },
     "vehicle_type": "Truck",
     "charge_percentage": 84,
@@ -492,511 +492,11 @@
   {
     "id": 50,
     "coordinates": {
-      "latitude": 46.192623,
-      "longitude": -123.834623
+      "latitude": 46.175788,
+      "longitude": -123.838384
     },
     "vehicle_type": "SUV",
     "charge_percentage": 41,
-    "status": "available"
-  },
-  {
-    "id": 51,
-    "coordinates": {
-      "latitude": 46.188123,
-      "longitude": -123.830623
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 76,
-    "status": "available"
-  },
-  {
-    "id": 52,
-    "coordinates": {
-      "latitude": 46.184623,
-      "longitude": -123.827623
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 19,
-    "status": "available"
-  },
-  {
-    "id": 53,
-    "coordinates": {
-      "latitude": 46.190623,
-      "longitude": -123.831623
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 96,
-    "status": "available"
-  },
-  {
-    "id": 54,
-    "coordinates": {
-      "latitude": 46.185623,
-      "longitude": -123.828623
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 51,
-    "status": "available"
-  },
-  {
-    "id": 55,
-    "coordinates": {
-      "latitude": 46.191123,
-      "longitude": -123.833123
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 8,
-    "status": "available"
-  },
-  {
-    "id": 56,
-    "coordinates": {
-      "latitude": 46.183123,
-      "longitude": -123.826123
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 62,
-    "status": "available"
-  },
-  {
-    "id": 57,
-    "coordinates": {
-      "latitude": 46.193623,
-      "longitude": -123.835623
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 37,
-    "status": "available"
-  },
-  {
-    "id": 58,
-    "coordinates": {
-      "latitude": 46.187345,
-      "longitude": -123.830345
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 81,
-    "status": "available"
-  },
-  {
-    "id": 59,
-    "coordinates": {
-      "latitude": 46.184345,
-      "longitude": -123.827345
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 26,
-    "status": "available"
-  },
-  {
-    "id": 60,
-    "coordinates": {
-      "latitude": 46.190345,
-      "longitude": -123.831345
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 73,
-    "status": "available"
-  },
-  {
-    "id": 61,
-    "coordinates": {
-      "latitude": 46.185345,
-      "longitude": -123.828345
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 100,
-    "status": "available"
-  },
-  {
-    "id": 62,
-    "coordinates": {
-      "latitude": 46.192345,
-      "longitude": -123.834345
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 17,
-    "status": "available"
-  },
-  {
-    "id": 63,
-    "coordinates": {
-      "latitude": 46.183345,
-      "longitude": -123.826345
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 91,
-    "status": "available"
-  },
-  {
-    "id": 64,
-    "coordinates": {
-      "latitude": 46.193345,
-      "longitude": -123.835345
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 4,
-    "status": "available"
-  },
-  {
-    "id": 65,
-    "coordinates": {
-      "latitude": 46.188345,
-      "longitude": -123.830845
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 56,
-    "status": "available"
-  },
-  {
-    "id": 66,
-    "coordinates": {
-      "latitude": 46.184845,
-      "longitude": -123.827845
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 64,
-    "status": "available"
-  },
-  {
-    "id": 67,
-    "coordinates": {
-      "latitude": 46.190845,
-      "longitude": -123.831845
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 39,
-    "status": "available"
-  },
-  {
-    "id": 68,
-    "coordinates": {
-      "latitude": 46.185845,
-      "longitude": -123.828845
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 87,
-    "status": "available"
-  },
-  {
-    "id": 69,
-    "coordinates": {
-      "latitude": 46.191345,
-      "longitude": -123.833345
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 21,
-    "status": "available"
-  },
-  {
-    "id": 70,
-    "coordinates": {
-      "latitude": 46.182845,
-      "longitude": -123.825845
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 94,
-    "status": "available"
-  },
-  {
-    "id": 71,
-    "coordinates": {
-      "latitude": 46.193845,
-      "longitude": -123.835845
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 49,
-    "status": "available"
-  },
-  {
-    "id": 72,
-    "coordinates": {
-      "latitude": 46.187845,
-      "longitude": -123.830945
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 13,
-    "status": "available"
-  },
-  {
-    "id": 73,
-    "coordinates": {
-      "latitude": 46.184456,
-      "longitude": -123.827456
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 72,
-    "status": "available"
-  },
-  {
-    "id": 74,
-    "coordinates": {
-      "latitude": 46.190456,
-      "longitude": -123.831456
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 29,
-    "status": "available"
-  },
-  {
-    "id": 75,
-    "coordinates": {
-      "latitude": 46.185456,
-      "longitude": -123.828456
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 57,
-    "status": "available"
-  },
-  {
-    "id": 76,
-    "coordinates": {
-      "latitude": 46.192456,
-      "longitude": -123.834456
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 83,
-    "status": "available"
-  },
-  {
-    "id": 77,
-    "coordinates": {
-      "latitude": 46.183456,
-      "longitude": -123.826456
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 32,
-    "status": "available"
-  },
-  {
-    "id": 78,
-    "coordinates": {
-      "latitude": 46.193456,
-      "longitude": -123.835456
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 61,
-    "status": "available"
-  },
-  {
-    "id": 79,
-    "coordinates": {
-      "latitude": 46.188456,
-      "longitude": -123.830456
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 7,
-    "status": "available"
-  },
-  {
-    "id": 80,
-    "coordinates": {
-      "latitude": 46.184956,
-      "longitude": -123.827956
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 52,
-    "status": "available"
-  },
-  {
-    "id": 81,
-    "coordinates": {
-      "latitude": 46.190956,
-      "longitude": -123.831956
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 74,
-    "status": "available"
-  },
-  {
-    "id": 82,
-    "coordinates": {
-      "latitude": 46.185956,
-      "longitude": -123.828956
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 25,
-    "status": "available"
-  },
-  {
-    "id": 83,
-    "coordinates": {
-      "latitude": 46.191456,
-      "longitude": -123.833456
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 97,
-    "status": "available"
-  },
-  {
-    "id": 84,
-    "coordinates": {
-      "latitude": 46.182956,
-      "longitude": -123.825956
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 43,
-    "status": "available"
-  },
-  {
-    "id": 85,
-    "coordinates": {
-      "latitude": 46.193956,
-      "longitude": -123.835956
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 16,
-    "status": "available"
-  },
-  {
-    "id": 86,
-    "coordinates": {
-      "latitude": 46.187956,
-      "longitude": -123.830756
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 69,
-    "status": "available"
-  },
-  {
-    "id": 87,
-    "coordinates": {
-      "latitude": 46.184765,
-      "longitude": -123.827765
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 38,
-    "status": "available"
-  },
-  {
-    "id": 88,
-    "coordinates": {
-      "latitude": 46.190765,
-      "longitude": -123.831765
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 86,
-    "status": "available"
-  },
-  {
-    "id": 89,
-    "coordinates": {
-      "latitude": 46.185765,
-      "longitude": -123.828765
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 1,
-    "status": "available"
-  },
-  {
-    "id": 90,
-    "coordinates": {
-      "latitude": 46.192765,
-      "longitude": -123.834765
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 54,
-    "status": "available"
-  },
-  {
-    "id": 91,
-    "coordinates": {
-      "latitude": 46.183765,
-      "longitude": -123.826765
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 70,
-    "status": "available"
-  },
-  {
-    "id": 92,
-    "coordinates": {
-      "latitude": 46.193765,
-      "longitude": -123.835765
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 28,
-    "status": "available"
-  },
-  {
-    "id": 93,
-    "coordinates": {
-      "latitude": 46.188765,
-      "longitude": -123.830665
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 99,
-    "status": "available"
-  },
-  {
-    "id": 94,
-    "coordinates": {
-      "latitude": 46.184,
-      "longitude": -123.827
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 63,
-    "status": "available"
-  },
-  {
-    "id": 95,
-    "coordinates": {
-      "latitude": 46.19,
-      "longitude": -123.832
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 14,
-    "status": "available"
-  },
-  {
-    "id": 96,
-    "coordinates": {
-      "latitude": 46.186666,
-      "longitude": -123.829666
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 48,
-    "status": "available"
-  },
-  {
-    "id": 97,
-    "coordinates": {
-      "latitude": 46.191111,
-      "longitude": -123.833111
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 9,
-    "status": "available"
-  },
-  {
-    "id": 98,
-    "coordinates": {
-      "latitude": 46.183333,
-      "longitude": -123.826333
-    },
-    "vehicle_type": "Truck",
-    "charge_percentage": 42,
-    "status": "available"
-  },
-  {
-    "id": 99,
-    "coordinates": {
-      "latitude": 46.192222,
-      "longitude": -123.834222
-    },
-    "vehicle_type": "SUV",
-    "charge_percentage": 34,
-    "status": "available"
-  },
-  {
-    "id": 100,
-    "coordinates": {
-      "latitude": 46.187777,
-      "longitude": -123.830777
-    },
-    "vehicle_type": "Car",
-    "charge_percentage": 59,
     "status": "available"
   }
 ]

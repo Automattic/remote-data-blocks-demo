@@ -9,6 +9,7 @@ This repo use [WordPress Playground](https://playground.wordpress.net/) to provi
 ## Use cases
 
 * [Top Albums of the year](https://wordpress-playground.atomicsites.blog/?blueprint-url=https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-blueprint.json)
+* [Car Locator](https://wordpress-playground.atomicsites.blog/?blueprint-url=https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/car-blueprint.json)
 
 Remote Data Blocks is a WordPress plugin that makes it easy to combine content and remote data in the block editor. Easily register blocks that load data from Airtable, Google Sheets, Shopify, GitHub, or any other API. [Read more about well-supported use cases](https://github.com/Automattic/remote-data-blocks).
 

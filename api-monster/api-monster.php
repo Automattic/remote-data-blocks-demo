@@ -12,7 +12,7 @@ declare(strict_types=1);
  * Requires Plugins: remote-data-blocks
  */
 
-namespace RemoteDataBlocks\Example\SRDMonsters;
+namespace RemoteDataBlocksDemo\SRDMonsters;
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;

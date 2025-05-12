@@ -12,7 +12,7 @@ declare(strict_types=1);
  * Requires Plugins: remote-data-blocks
  */
 
-namespace RemoteDataBlocks\Snippets\Airtable;
+namespace RemoteDataBlocksDemo\Airtable;
 
 use RemoteDataBlocks\Integrations\Airtable\AirtableDataSource;
 use RemoteDataBlocks\WpdbStorage\DataSourceCrud;

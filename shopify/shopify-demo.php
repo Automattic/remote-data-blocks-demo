@@ -11,9 +11,10 @@
 
 declare(strict_types=1);
 
-namespace ShopifyDemo;
+namespace RemoteDataBlocksDemo\Shopify;
 
 use RemoteDataBlocks\Integrations\Shopify\ShopifyIntegration;
+use RemoteDataBlocks\Integrations\Shopify\ShopifyDataSource;
 use function add_action;
 
 require_once __DIR__ . '/ExampleShopifyDataSource.php';
@@ -23,14 +24,18 @@ require_once __DIR__ . '/ExampleShopifyDataSource.php';
  */
 function register_example_shop(): void
 {
+
     $shopify_data_source = ExampleShopifyDataSource::from_array([
         'service_config' => [
             '__version' => 1,
             'access_token' => '',  // Not needed for mock shop
             'display_name' => 'Example Shop',
+            'enable_blocks' => true,
             'store_name' => 'mock',  // Not used but required by schema
         ],
     ]);
+
+    
 
     ShopifyIntegration::register_blocks_for_shopify_data_source($shopify_data_source);
 }

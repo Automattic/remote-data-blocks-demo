@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ShopifyDemo;
+namespace RemoteDataBlocksDemo\Shopify;
 
 use RemoteDataBlocks\Integrations\Shopify\ShopifyDataSource;
 use RemoteDataBlocks\Validation\Types;

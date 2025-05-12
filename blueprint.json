@@ -57,62 +57,6 @@
         "resource": "url",
         "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
       }
-    },
-    {
-      "step": "mkdir",
-      "path": "/wordpress/wp-content/plugins/airtable-demo"
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/airtable-demo/airtable-demo.php",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-demo.php"
-      }
-    },
-    {
-      "step": "activatePlugin",
-      "pluginPath": "airtable-demo/airtable-demo.php"
-    },
-    {
-      "step": "mkdir",
-      "path": "/wordpress/wp-content/plugins/api-monster"
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/api-monster/api-monster.php",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/api-monster/api-monster.php"
-      }
-    },
-    {
-      "step": "activatePlugin",
-      "pluginPath": "api-monster/api-monster.php"
-    },
-    {
-      "step": "mkdir",
-      "path": "/wordpress/wp-content/plugins/shopify-demo"
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/shopify-demo/ExampleShopifyDataSource.php",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/ExampleShopifyDataSource.php"
-      }
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/plugins/shopify-demo/shopify-demo.php",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/shopify-demo.php"
-      }
-    },
-    {
-      "step": "activatePlugin",
-      "pluginPath": "shopify-demo/shopify-demo.php"
     }
   ]
 }

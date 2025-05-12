@@ -1,0 +1,102 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "meta": {
+        "title": "Car Locator Demo",
+        "description": "Installs plugins to demo Remote Data Blocks.",
+        "author": "WordPress VIP",
+        "categories": [
+            "Content"
+        ]
+    },
+    "features": {
+        "networking": true
+    },
+    "landingPage": "/?page_id=49",
+    "login": true,
+    "preferredVersions": {
+        "php": "8.2",
+        "wp": "latest"
+    },
+    "steps": [
+        {
+            "step": "resetData"
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "jetpack"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "defineWpConfigConsts",
+            "consts": {
+                "USE_PLAYGROUND_CORS_PROXY": true,
+                "JETPACK_DEBUG": "true",
+                "JETPACK_DEV_DEBUG": "true",
+                "DNS_NS": 0
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "blogname": "Car Locator",
+                "blogdescription": "don't be a Goonie",
+                "jetpack_active_modules": [
+                    "blocks",
+                    "subscriptions"
+                ]
+            }
+        },
+        {
+            "step": "installPlugin",
+            "options": {
+                "activate": true,
+                "targetFolderName": "remote-data-blocks"
+            },
+            "pluginData": {
+                "caption": "Installing Remote Data Blocks",
+                "resource": "url",
+                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+            }
+        },
+        {
+            "step": "mkdir",
+            "path": "/wordpress/wp-content/plugins/car-locator"
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/car-locator/car-locator.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/car-locator.php"
+            }
+        },
+        {
+            "step": "mkdir",
+            "path": "/wordpress/wp-content/plugins/car-locator/build"
+        },
+        {
+            "step": "unzip",
+            "zipFile": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/car-locator.zip"
+            },
+            "extractToPath": "/wordpress/wp-content/plugins/car-locator/build"
+        },
+        {
+            "step": "activatePlugin",
+            "pluginPath": "car-locator/car-locator.php"
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/car-content.xml"
+            }
+        }
+    ]
+}

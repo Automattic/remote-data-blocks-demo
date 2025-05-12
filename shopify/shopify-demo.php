@@ -31,7 +31,7 @@ function register_example_shop(): void
             'access_token' => '',  // Not needed for mock shop
             'display_name' => 'Example Shop',
             'enable_blocks' => true,
-            'store_name' => 'mock',  // Not used but required by schema
+            'store_name' => 'mock-store',  // Not used but required by schema
         ],
     ]);
 

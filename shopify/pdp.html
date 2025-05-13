@@ -1,0 +1,38 @@
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+    <!-- wp:heading {"level":1,"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/example-shop-product-details-page","field":"title"}}},"name":"Title"}} -->
+    <h1 class="wp-block-heading"></h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:columns -->
+    <div class="wp-block-columns"><!-- wp:column {"width":"33%"} -->
+        <div class="wp-block-column" style="flex-basis:33%">
+            <!-- wp:image {"metadata":{"bindings":{"url":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/example-shop-product-details-page","field":"image_url"}},"alt":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/example-shop-product-details-page","field":"image_alt_text"}}},"name":"Image Alt Text"}} -->
+            <figure class="wp-block-image"><img src="" alt="" /></figure>
+            <!-- /wp:image -->
+        </div>
+        <!-- /wp:column -->
+
+        <!-- wp:column -->
+        <div class="wp-block-column">
+            <!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"field":"price","block":"remote-data-blocks/example-shop-product-details-page"}}},"name":"Item price"},"className":""} -->
+            <p></p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons">
+                <!-- wp:button {"metadata":{"bindings":{"url":{"source":"remote-data/binding","args":{"field":"online_store_url","block":"remote-data-blocks/example-shop-product-details-page"}}},"name":"Online Store URL"},"className":""} -->
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Buy Now</a></div>
+                <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+        </div>
+        <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
+
+    <!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/example-shop-product-details-page","field":"description"}}},"name":"Product description"}} -->
+    <p></p>
+    <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->

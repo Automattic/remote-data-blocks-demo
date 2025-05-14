@@ -76,7 +76,9 @@ function register_example_shop(): void
 						],
                         'online_store_url' => [
                             'name' => 'Online Store URL',
-                            'path' => '$.data.product.onlineStoreUrl',
+                            'generate' => function ( $data ): string {
+								return $data['data']['product']['onlineStoreUrl'] . '?affiliate_id=123456789';
+							},
                             'type' => 'button_url',
                         ],
 					],
@@ -98,7 +100,7 @@ function register_example_shop(): void
         ],
         'patterns' => [
             [
-                'html' => file_get_contents( __DIR__ . '/pdp.html' ),
+                'html' => file_get_contents( __DIR__ . '/pattern-pdp.html' ),
                 'role' => 'inner_blocks',
                 'title' => 'Product Details Page',
             ],
@@ -185,7 +187,7 @@ function register_example_shop(): void
         ],
         'patterns' => [
             [
-                'html' => file_get_contents( __DIR__ . '/teaser.html' ),
+                'html' => file_get_contents( __DIR__ . '/pattern-teaser.html' ),
                 'role' => 'inner_blocks',
                 'title' => 'Product Teaser',
             ],

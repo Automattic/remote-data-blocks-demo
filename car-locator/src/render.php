@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace RemoteDataBlocks\Demo\CarLocator;
+namespace RemoteDataBlocksDemo\CarLocator;
 
 // Retrieve the query from the registry.
 $car_location_query = CarLocatorRegistry::$query;

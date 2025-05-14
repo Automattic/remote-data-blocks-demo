@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
-namespace ShopifyDemo;
+namespace RemoteDataBlocksDemo\Shopify;
 
 use RemoteDataBlocks\Integrations\Shopify\ShopifyDataSource;
 use RemoteDataBlocks\Validation\Types;
 
+defined( 'ABSPATH' ) || exit();
+
 class ExampleShopifyDataSource extends ShopifyDataSource
 {
-    protected const SERVICE_NAME = 'shopify';
+    protected const SERVICE_NAME = REMOTE_DATA_BLOCKS_SHOPIFY_SERVICE;
     protected const SERVICE_SCHEMA_VERSION = 1;
 
     protected static function get_service_config_schema(): array
@@ -18,6 +20,7 @@ class ExampleShopifyDataSource extends ShopifyDataSource
             '__version' => Types::integer(),
             'access_token' => Types::skip_sanitize(Types::string()),
             'display_name' => Types::string(),
+            'enable_blocks' => Types::nullable(Types::boolean()),
             'store_name' => Types::string(),
         ]);
     }

@@ -7,7 +7,7 @@
  * Author: WordPress VIP and Cascade AI
  */
 
-namespace RemoteDataBlocks\Demo\CarLocator;	
+namespace RemoteDataBlocksDemo\CarLocator;	
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;

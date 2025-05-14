@@ -1,0 +1,122 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "meta": {
+        "title": "E-Commerce Demo",
+        "description": "Installs plugins to demo Remote Data Blocks.",
+        "author": "WordPress VIP",
+        "categories": [
+            "Content"
+        ]
+    },
+    "features": {
+        "networking": true
+    },
+    "landingPage": "/?page_id=50",
+    "login": true,
+    "preferredVersions": {
+        "php": "8.2",
+        "wp": "latest"
+    },
+    "steps": [
+        {
+            "step": "resetData"
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "jetpack"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "defineWpConfigConsts",
+            "consts": {
+                "USE_PLAYGROUND_CORS_PROXY": true,
+                "JETPACK_DEBUG": "true",
+                "JETPACK_DEV_DEBUG": "true",
+                "DNS_NS": 0
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "blogname": "My Fashion Blog",
+                "blogdescription": "you ... upgraded",
+                "jetpack_active_modules": [
+                    "blocks",
+                    "subscriptions"
+                ]
+            }
+        },
+        {
+            "step": "installPlugin",
+            "options": {
+                "activate": true,
+                "targetFolderName": "remote-data-blocks"
+            },
+            "pluginData": {
+                "caption": "Installing Remote Data Blocks",
+                "resource": "url",
+                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+            }
+        },
+        {
+            "step": "mkdir",
+            "path": "/wordpress/wp-content/plugins/shopify-demo"
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/shopify-demo.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/shopify-demo.php"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/ExampleShopifyDataSource.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/ExampleShopifyDataSource.php"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/GetProductById.graphql",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/GetProductById.graphql"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/pattern-pdp.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/pattern-pdp.html"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/pattern-teaser.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/pattern-teaser.html"
+            }
+        },
+        {
+            "step": "activatePlugin",
+            "pluginPath": "shopify-demo/shopify-demo.php"
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/shopify-content.xml"
+            }
+        }
+    ]
+}

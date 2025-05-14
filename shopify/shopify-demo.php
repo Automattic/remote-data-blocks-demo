@@ -124,7 +124,7 @@ function register_example_shop(): void
             $product_id = get_query_var( 'demo_product_id' );
 
             if ( ! empty( $product_id ) ) {
-                $input_variables['product_id'] = "gid://shopify/Product/" . $product_id;
+                $input_variables['id'] = "gid://shopify/Product/" . $product_id;
             }
         }
 
@@ -155,7 +155,7 @@ function register_example_shop(): void
 						'title' => [
 							'name' => 'Title',
 							'path' => '$.data.product.title',
-							'type' => 'title',
+							'type' => 'button_text',
 						],
                        'details_button_url' => [
 							'name' => 'Details URL',
@@ -182,7 +182,14 @@ function register_example_shop(): void
                 'query' => $queries['shopify_search_products'],
                 'type' => 'search',
             ],
-        ]
+        ],
+        'patterns' => [
+            [
+                'html' => file_get_contents( __DIR__ . '/teaser.html' ),
+                'role' => 'inner_blocks',
+                'title' => 'Product Teaser',
+            ],
+        ],
     ] );
 
     

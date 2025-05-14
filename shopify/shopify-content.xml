@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.1" created="2025-05-14 16:12" -->
+	<!-- generator="WordPress/6.8.1" created="2025-05-14 16:31" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>remote-data-blocks</title>
 	<link>http://localhost:8888</link>
 	<description></description>
-	<pubDate>Wed, 14 May 2025 16:12:37 +0000</pubDate>
+	<pubDate>Wed, 14 May 2025 16:31:03 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888</wp:base_site_url>
@@ -239,13 +239,13 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[[Template] Product Page]]></title>
+		<title><![CDATA[Product]]></title>
 		<link>http://localhost:8888/products/</link>
 		<pubDate>Wed, 12 Mar 2025 21:34:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/?page_id=56</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:remote-data-blocks/example-shop-product-details-page {"remoteData":{"enabledOverrides":["product_id_override"],"blockName":"remote-data-blocks/example-shop-product-details-page","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-05-13 21:11:59"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"id":"gid://shopify/Product/7982902771734"}],"resultId":"78fd19af-545c-4d04-9ba6-256b6cb6c117","results":[{"result":{"description":{"name":"Product description","type":"string","value":"Crafted from organic cotton, this classic T-shirt features a relaxed fit, crew neckline and timeless look. Enjoy the breathable comfort of 100% organic cotton."},"image_alt_text":{"name":"Image Alt Text","type":"image_alt","value":null},"image_url":{"name":"Image URL","type":"image_url","value":"https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenTshirt01.jpg?v=1675455410"},"price":{"name":"Item price","type":"currency_in_current_locale","value":"$40.00"},"title":{"name":"Title","type":"title","value":"Men's T-shirt"},"online_store_url":{"name":"Online Store URL","type":"button_url","value":"https://demostore.mock.shop/products/men-t-shirt"}},"uuid":"d9cc9ae7-15bd-45bd-9682-c974a4a130d1"}]}} -->
+		<content:encoded><![CDATA[<!-- wp:remote-data-blocks/example-shop-product-details-page {"remoteData":{"enabledOverrides":["product_id_override"],"blockName":"remote-data-blocks/example-shop-product-details-page","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-05-14 16:25:01"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"id":"gid://shopify/Product/7982902771734"}],"resultId":"67b59d41-9a62-4b04-9f99-88c86d9dee1f","results":[{"result":{"description":{"name":"Product description","type":"string","value":"Crafted from organic cotton, this classic T-shirt features a relaxed fit, crew neckline and timeless look. Enjoy the breathable comfort of 100% organic cotton."},"image_alt_text":{"name":"Image Alt Text","type":"image_alt","value":null},"image_url":{"name":"Image URL","type":"image_url","value":"https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenTshirt01.jpg?v=1675455410"},"price":{"name":"Item price","type":"currency_in_current_locale","value":"$40.00"},"title":{"name":"Title","type":"title","value":"Men's T-shirt"},"online_store_url":{"name":"Online Store URL","type":"button_url","value":"https://demostore.mock.shop/products/men-t-shirt?affiliate_id=123456789"}},"uuid":"845bb27b-90a0-427b-b794-ca42bcf139c3"}]}} -->
 <div class="wp-block-remote-data-blocks-example-shop-product-details-page rdb-container"><!-- wp:remote-data-blocks/template -->
 <!-- wp:group {"metadata":{"categories":["Remote Data"],"patternName":"remote-data-blocks/product-details-page","name":"Product Details Page"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":1,"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/example-shop-product-details-page","field":"title"}}},"name":"Title"}} -->
@@ -266,7 +266,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"remote-data/binding","args":{"field":"online_store_url","block":"remote-data-blocks/example-shop-product-details-page"}}},"name":"Online Store URL"},"className":""} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Buy Now</a></div>
+<div class="wp-block-button"><a target="_blank" class="wp-block-button__link wp-element-button">Buy Now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -306,8 +306,8 @@
 		<wp:post_id>56</wp:post_id>
 		<wp:post_date><![CDATA[2025-03-12 21:34:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-03-12 21:34:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-05-14 16:12:16]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-05-14 16:12:16]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-05-14 16:30:39]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-05-14 16:30:39]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[products]]></wp:post_name>

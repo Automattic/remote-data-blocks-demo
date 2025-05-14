@@ -2,6 +2,55 @@ import domReady from '@wordpress/dom-ready';
 
 /* global document, leaflet */
 
+// Helper function to add CSS for the legend to the document head
+function addLegendCSSOnce() {
+	if (document.getElementById('leaflet-map-legend-styles')) {
+		return; // Style already added
+	}
+	const css = `
+        .info.legend {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            line-height: 20px;
+            color: #555;
+        }
+        .info.legend h4 {
+            margin: 0 0 5px;
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+        }
+        .info.legend div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .info.legend div:last-child {
+            margin-bottom: 0;
+        }
+        .info.legend img {
+            width: 15px; /* Scaled down from 25px */
+            height: 25px; /* Scaled down from 41px (maintaining aspect ratio) */
+            margin-right: 8px;
+        }
+    `;
+	const head = document.head || document.getElementsByTagName('head')[0];
+	const style = document.createElement('style');
+	style.id = 'leaflet-map-legend-styles'; // Add an ID to check for existence
+
+	if (style.styleSheet) {
+		// This is required for IE8 and below.
+		style.styleSheet.cssText = css;
+	} else {
+		style.appendChild(document.createTextNode(css));
+	}
+	head.appendChild(style);
+}
+
 export function initMaps(mapElements) {
 	mapElements.forEach(element => {
 		const data = element?.dataset.mapCoordinates ?? '';
@@ -92,10 +141,33 @@ export function initMaps(mapElements) {
 			// map.setView([DEFAULT_LAT, DEFAULT_LON], DEFAULT_ZOOM);
 			console.warn('First coordinate was invalid, map might not be centered as expected.');
 		}
+
+		// Add Legend
+		const LegendControl = leaflet.Control.extend({
+			onAdd: function (mapInstance) {
+				const div = leaflet.DomUtil.create('div', 'info legend');
+				const statuses = [
+					{ label: 'Available', iconUrl: availableIcon.options.iconUrl },
+					{ label: 'Reserved', iconUrl: reservedIcon.options.iconUrl },
+					{ label: 'In Use', iconUrl: inUseIcon.options.iconUrl },
+				];
+				let legendHtml = '<h4>Vehicle Status</h4>';
+				statuses.forEach(status => {
+					legendHtml += `<div><img src="${status.iconUrl}" alt="${status.label}"> ${status.label}</div>`;
+				});
+				div.innerHTML = legendHtml;
+				return div;
+			},
+			onRemove: function (mapInstance) {
+				// Nothing to do here
+			}
+		});
+		new LegendControl({ position: 'bottomright' }).addTo(map);
 	});
 }
 
 // When the document is ready, find all maps and initialize them with Leaflet.
 domReady(() => {
+	addLegendCSSOnce(); // Add CSS for the legend
 	initMaps(document.querySelectorAll('.wp-block-rdb-demo-car-map[data-map-coordinates]'));
 });

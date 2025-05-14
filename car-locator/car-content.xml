@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.1" created="2025-05-09 22:09" -->
+	<!-- generator="WordPress/6.8.1" created="2025-05-14 18:07" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>remote-data-blocks</title>
 	<link>http://localhost:8888</link>
 	<description></description>
-	<pubDate>Fri, 09 May 2025 22:09:54 +0000</pubDate>
+	<pubDate>Wed, 14 May 2025 18:07:56 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888</wp:base_site_url>
@@ -41,24 +41,33 @@
 	<generator>https://wordpress.org/?v=6.8.1</generator>
 
 		<item>
-		<title><![CDATA[Car Locator]]></title>
+		<title><![CDATA[Astoria Community Care Share]]></title>
 		<link>http://localhost:8888/car-locator/</link>
 		<pubDate>Tue, 08 Apr 2025 21:27:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/?page_id=49</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:rdb-demo/car-map /--></div>
+		<content:encoded><![CDATA[<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Astoria Community Care Share</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>We have cars in your neighborhood! Zoom in on the map to find a car close</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"categories":["call-to-action"],"patternName":"twentytwentyfive/cta-centered-heading","name":"Centered heading"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"0vh"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:rdb-demo/car-map /-->
+
+<!-- wp:group {"metadata":{"categories":["call-to-action"],"patternName":"twentytwentyfive/cta-centered-heading","name":"Centered heading"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"0vh"},"layout":{"selfStretch":"fixed","flexSize":"300px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="min-height:0vh;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"right":"0","left":"0"},"padding":{"right":"0","left":"0"}}},"fontSize":"xx-large"} -->
 <h2 class="wp-block-heading has-text-align-center has-xx-large-font-size" style="margin-right:0;margin-left:0;padding-right:0;padding-left:0">Sign Up Today</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Don't be a goonie, join the car sharing adventure and find the real treasure: fiends.</p>
+<p class="has-text-align-center">Join the car sharing adventure and find the real treasure: friends.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -67,13 +76,52 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"categories":["banner"],"patternName":"twentytwentyfive/services-3-col","name":"Services, 3 columns"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|50","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"align":"wide"} -->
+<h2 class="wp-block-heading alignwide">Our difference</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Electric</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">All the cars in our fleet are 100% electric, providing a sustainable and eco-friendly transportation option. Enjoy a smooth, quiet ride while reducing your carbon footprint.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Local</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">We're a community-run non-profit, dedicated to providing accessible and affordable electric car sharing. By choosing us, you're supporting a service that gives back to the community.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fair</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size">Our service offers a sliding scale payment option, ensuring everyone can access electric car sharing regardless of income. We believe in equitable transportation for all.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>49</wp:post_id>
 		<wp:post_date><![CDATA[2025-04-08 21:27:00]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-04-08 21:27:00]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-05-09 22:09:39]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-05-09 22:09:39]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-05-14 18:00:28]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-05-14 18:00:28]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[car-locator]]></wp:post_name>

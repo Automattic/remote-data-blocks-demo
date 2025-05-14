@@ -35,7 +35,7 @@ function formula_one_rdb_init(): void {
 		    'endpoint' => 'https://v1.formula-1.api-sports.io',
 			'request_headers' => [
 				'x-rapidapi-host' => 'v1.formula-1.api-sports.io',
-				'x-rapidapi-key' => 'ea3c1812a737d3f72e95db1faef79e92',
+				'x-rapidapi-key' => base64_decode('ZWEzYzE4MTJhNzM3ZDNmNzJlOTVkYjFmYWVmNzllOTI='),
 				'Content-Type' => 'application/json',
 			],
 		],

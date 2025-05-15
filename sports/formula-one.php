@@ -134,6 +134,14 @@ function formula_one_rdb_init(): void {
             'type'          => [
                 'name'                 => ['name' => 'Name', 'path' => '$.response[0].name', 'type' => 'string'],
                 'image'                => ['name' => 'Image', 'path' => '$.response[0].image', 'type' => 'image_url'],
+                'driver_image_alt' => [
+                    'name' => 'Driver Image Alt Text',
+                    'type' => 'image_alt',
+                    'generate' => function( $item_data ) {
+                        $driver_name = $item_data['response'][0]['name'] ?? 'N/A';
+                        return sprintf( 'Photo of %s', $driver_name );
+                    },
+                ],
                 'nationality'          => ['name' => 'Nationality', 'path' => '$.response[0].nationality', 'type' => 'string'],
                 'birthdate'            => ['name' => 'Birthdate', 'path' => '$.response[0].birthdate', 'type' => 'string'],
                 'birthplace'           => ['name' => 'Birthplace', 'path' => '$.response[0].birthplace', 'type' => 'string'],
@@ -210,6 +218,13 @@ function formula_one_rdb_init(): void {
                 'type'  => 'search',
             ],
         ],
+        'patterns' => [
+                [
+                    'html' => file_get_contents( __DIR__ . '/pattern-driver.html' ),
+                    'role' => 'inner_blocks',
+                    'title' => 'Driver Profile',
+                ],
+            ],
         'overrides' => [
             [
                 'name' => 'driver_id_override',
@@ -261,17 +276,18 @@ function formula_one_rdb_init(): void {
         'output_schema' => [
             'is_collection' => false,
             'type'          => [
-                'id'                  => ['name' => 'Team ID', 'path' => '$.response[0].id', 'type' => 'integer'],
                 'name'                => ['name' => 'Name', 'path' => '$.response[0].name', 'type' => 'string'],
                 'logo'                => ['name' => 'Logo', 'path' => '$.response[0].logo', 'type' => 'image_url'],
-                'base'                => ['name' => 'Base Location', 'path' => '$.response[0].base', 'type' => 'string'],
-                'first_team_entry'    => ['name' => 'First Team Entry', 'path' => '$.response[0].first_team_entry', 'type' => 'integer'],
+                'logo_alt'            => ['name' => 'Team Logo Alt Text', 'path' => '$.response[0].name', 'type' => 'image_alt'],
+                'base'                => ['name' => 'Location', 'path' => '$.response[0].base', 'type' => 'string'],
+                'first_team_entry'    => ['name' => 'First Year in F1', 'path' => '$.response[0].first_team_entry', 'type' => 'integer'],
                 'world_championships' => ['name' => 'World Championships', 'path' => '$.response[0].world_championships', 'type' => 'integer'],
                 'president'           => ['name' => 'President', 'path' => '$.response[0].president', 'type' => 'string'],
                 'director'            => ['name' => 'Director', 'path' => '$.response[0].director', 'type' => 'string'],
                 'technical_manager'   => ['name' => 'Technical Manager', 'path' => '$.response[0].technical_manager', 'type' => 'string'],
                 'engine_supplier'     => ['name' => 'Engine Supplier', 'path' => '$.response[0].engine', 'type' => 'string'],
                 'chassis'             => ['name' => 'Chassis', 'path' => '$.response[0].chassis', 'type' => 'string'],
+                'tyres'               => ['name' => 'Tyres', 'path' => '$.response[0].tyres', 'type' => 'string'],
             ],
         ],
     ]);
@@ -327,6 +343,13 @@ function formula_one_rdb_init(): void {
                 'type'  => 'search',
             ],
         ],
+        'patterns' => [
+                [
+                    'html' => file_get_contents( __DIR__ . '/pattern-team.html' ),
+                    'role' => 'inner_blocks',
+                    'title' => 'Team Profile',
+                ],
+            ],
         'overrides'    => [
             [
                 'name'         => 'team_id_override',

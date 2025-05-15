@@ -1,0 +1,114 @@
+{
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "meta": {
+        "title": "Formula One Demo",
+        "description": "Installs plugins to demo Remote Data Blocks.",
+        "author": "WordPress VIP",
+        "categories": [
+            "Content"
+        ]
+    },
+    "features": {
+        "networking": true
+    },
+    "landingPage": "/?page_id=119",
+    "login": true,
+    "preferredVersions": {
+        "php": "8.2",
+        "wp": "latest"
+    },
+    "steps": [
+        {
+            "step": "resetData"
+        },
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "wordpress.org/plugins",
+                "slug": "jetpack"
+            },
+            "options": {
+                "activate": true
+            }
+        },
+        {
+            "step": "defineWpConfigConsts",
+            "consts": {
+                "USE_PLAYGROUND_CORS_PROXY": true,
+                "JETPACK_DEBUG": "true",
+                "JETPACK_DEV_DEBUG": "true",
+                "DNS_NS": 0
+            }
+        },
+        {
+            "step": "setSiteOptions",
+            "options": {
+                "blogname": "Formula One",
+                "blogdescription": "I feel the need, the need for speed",
+                "jetpack_active_modules": [
+                    "blocks",
+                    "subscriptions"
+                ]
+            }
+        },
+        {
+            "step": "installPlugin",
+            "options": {
+                "activate": true,
+                "targetFolderName": "remote-data-blocks"
+            },
+            "pluginData": {
+                "caption": "Installing Remote Data Blocks",
+                "resource": "url",
+                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+            }
+        },
+        {
+            "step": "mkdir",
+            "path": "/wordpress/wp-content/plugins/formula-one"
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/formula-one/formula-one.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/formula-one/formula-one.php"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/formula-one/pattern-listing.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/formula-one/pattern-listing.html"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/formula-one/pattern-driver.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/formula-one/pattern-driver.html"
+            }
+        },
+        {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/formula-one/pattern-team.html",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/formula-one/pattern-team.html"
+            }
+        },
+        {
+            "step": "activatePlugin",
+            "pluginPath": "formula-one/formula-one.php"
+        },
+        {
+            "step": "importWxr",
+            "file": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/formula-one/f1-content.xml"
+            }
+        }
+    ]
+}

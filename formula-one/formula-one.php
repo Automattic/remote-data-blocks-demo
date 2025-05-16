@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+
 /**
  * Initializes the Formula One RDB integration and registers queries/blocks.
  * Attached to 'init' action.
@@ -34,7 +35,7 @@ function formula_one_rdb_init(): void {
 			'x-rapidapi-key' => base64_decode('ZWEzYzE4MTJhNzM3ZDNmNzJlOTVkYjFmYWVmNzllOTI='),
 		],
 	]);
-
+    
     $driver_rankings_query = HttpQuery::from_array([
         'data_source' => $f1_data_source,
         'display_name' => 'Driver Rankings Season',
@@ -116,13 +117,13 @@ function formula_one_rdb_init(): void {
         'display_name' => 'Driver Information',
         'endpoint' => function (array $input_variables) use ($f1_data_source): string {
             $endpoint = $f1_data_source->get_endpoint() . '/drivers';
-            if ( ! empty( $input_variables['id'] ) ) {
-                $endpoint .= '?id=' . rawurlencode($input_variables['id']);
+            if ( ! empty( $input_variables['driver_id'] ) ) {
+                $endpoint .= '?id=' . rawurlencode($input_variables['driver_id']);
             }
             return $endpoint;
         },
         'input_schema' => [
-            'id' => [
+            'driver_id' => [
                 'type'        => 'integer',
                 'name'        => 'Driver ID',
                 'required'    => true,
@@ -174,14 +175,16 @@ function formula_one_rdb_init(): void {
             $endpoint = $f1_data_source->get_endpoint() . '/drivers';
             if ( ! empty( $input_variables['search'] ) ) {
                 $endpoint .= '?search=' . rawurlencode( $input_variables['search'] );
+            } else {
+                $endpoint .= '?search=' . rawurlencode( 'lewi');
             }
+
             return $endpoint;
         },
         'input_schema'  => [
             'search' => [
                 'type'        => 'ui:search_input',
                 'name'        => 'Search Term',
-                'required'    => true,
                 'description' => 'The search term for drivers (e.g., Ham).',
             ],
         ],
@@ -189,7 +192,7 @@ function formula_one_rdb_init(): void {
             'is_collection'   => true,
             'path' => '$.response[*]', // Path to the array of drivers
             'type'            => [
-                'id'                  => ['name' => 'Driver ID', 'path' => '$.id', 'type' => 'integer'],
+                'driver_id'           => ['name' => 'Driver ID', 'path' => '$.id', 'type' => 'integer'],
                 'driver_name'         => ['name' => 'Name', 'path' => '$.name', 'type' => 'string'],
                 'driver_image'        => ['name' => 'Image', 'path' => '$.image', 'type' => 'image_url'],
                 'team_name'           => ['name' => 'Team Name', 'path' => '$.teams[0].team.name', 'type' => 'string'],
@@ -203,7 +206,7 @@ function formula_one_rdb_init(): void {
             ],
         ],
     ]);
-
+    
     // Register the Driver Profile block (Search + Display Details)
     register_remote_data_block([
         'title'             => __( 'Formula One Driver Profile', 'remote-data-blocks-demo' ),
@@ -241,18 +244,6 @@ function formula_one_rdb_init(): void {
         return $query_vars;
     }, 10, 1 );
 
-    add_filter( 'remote_data_blocks_query_input_variables', function ( array $input_variables, array $enabled_overrides ): array {
-        if ( true === in_array( 'driver_id_override', $enabled_overrides, true ) ) {
-            $driver_id = get_query_var( 'demo_driver_id' );
-
-            if ( ! empty( $driver_id ) ) {
-                $input_variables['id'] = $driver_id;
-            }
-        }
-
-        return $input_variables;
-    }, 10, 2 );
-
 
     // 3. Team Information by ID Query
     $team_by_id_query = HttpQuery::from_array([
@@ -260,13 +251,13 @@ function formula_one_rdb_init(): void {
         'display_name' => 'Team Information',
         'endpoint' => function (array $input_variables) use ($f1_data_source): string {
             $endpoint = $f1_data_source->get_endpoint() . '/teams';
-            if ( ! empty( $input_variables['id'] ) ) {
-                $endpoint .= '?id=' . rawurlencode( $input_variables['id'] );
+            if ( ! empty( $input_variables['team_id'] ) ) {
+                $endpoint .= '?id=' . rawurlencode( $input_variables['team_id'] );
             }
             return $endpoint;
         },
         'input_schema' => [
-            'id' => [
+            'team_id' => [
                 'type'        => 'integer',
                 'name'        => 'Team ID',
                 'required'    => true,
@@ -315,9 +306,8 @@ function formula_one_rdb_init(): void {
             'is_collection'   => true,
             'path' => '$.response[*]',
             'type'            => [
-                'id'      => ['name' => 'Team ID', 'path' => '$.id', 'type' => 'integer'],
-                'name'    => ['name' => 'Name', 'path' => '$.name', 'type' => 'string'],
-                'logo'    => ['name' => 'Logo', 'path' => '$.logo', 'type' => 'image_url'],
+                'team_id'      => ['name' => 'Team ID', 'path' => '$.id', 'type' => 'integer'],
+                'name'    => ['name' => 'Name', 'path' => '$.name', 'type' => 'string']
             ],
         ],
         'pagination_schema' => [
@@ -372,7 +362,7 @@ function formula_one_rdb_init(): void {
         if ( true === in_array( 'driver_id_override', $enabled_overrides, true ) ) {
             $driver_id = get_query_var( 'demo_driver_id' );
             if ( ! empty( $driver_id ) ) {
-                $input_variables['id'] = $driver_id;
+                $input_variables['driver_id'] = $driver_id;
             }
         }
 
@@ -381,12 +371,12 @@ function formula_one_rdb_init(): void {
             $team_id = get_query_var( 'demo_team_id' );
             if ( ! empty( $team_id ) ) {
                 // Important: Ensure 'id' is the correct input field name for team_by_id_query
-                $input_variables['id'] = $team_id; 
+                $input_variables['team_id'] = $team_id; 
             }
         }
 
         return $input_variables;
-    }, 10, 2 ); // Ensure this priority doesn't conflict if there was an old filter
+    }, 10, 2 );
 
 }
 

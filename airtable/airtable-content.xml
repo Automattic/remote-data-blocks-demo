@@ -137,7 +137,7 @@
 <p>In an era where algorithm-friendly mediocrity often prevails, Segall has crafted something genuinely surprising – a late-career masterpiece that rewards repeated listens and reminds us why we fell in love with adventurous music in the first place.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:remote-data-blocks/kexp-top-100-2024 {"remoteData":{"enabledOverrides":[],"blockName":"remote-data-blocks/kexp-top-100-2024","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-05-08 18:56:57"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"record_id":"rec2tJ0NJnrLoxL8L"}],"resultId":"d803bca9-f9a9-48f9-b65c-7bd135ffab45","results":[{"result":{"record_id":{"name":"Record ID","type":"id","value":"rec2tJ0NJnrLoxL8L"},"Rank":{"name":"Rank","type":"number","value":91}," Artist":{"name":" Artist","type":"string","value":"Ty Segall"},"Album":{"name":"Album","type":"string","value":"Three Bells"},"Album Art URL":{"name":"Album Art URL","type":"image_url","value":"https://i.scdn.co/image/ab67616d0000b273f59ff87f29406c92b5a116d0"},"Spotify Artist URL":{"name":"Spotify Artist URL","type":"button_url","value":"https://open.spotify.com/artist/58XGUNsRNu3cVOIOYk5chx"}},"uuid":"7ea316b0-80cf-4318-92e5-afd9a42af77e"}]}} -->
+<!-- wp:remote-data-blocks/kexp-top-100-2024 {"remoteData":{"enabledOverrides":[],"blockName":"remote-data-blocks/kexp-top-100-2024","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-05-30 18:21:02"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"record_id":"rec2tJ0NJnrLoxL8L"}],"resultId":"1fd080c8-3de2-4cd5-9fe7-92dbae57fcde","results":[{"result":{"record_id":{"name":"Record ID","type":"id","value":"rec2tJ0NJnrLoxL8L"},"Rank":{"name":"Rank","type":"number","value":91}," Artist":{"name":" Artist","type":"string","value":"Ty Segall"},"Album":{"name":"Album","type":"string","value":"Three Bells"},"Album Art URL":{"name":"Album Art URL","type":"image_url","value":"https://i.scdn.co/image/ab67616d0000b273f59ff87f29406c92b5a116d0"},"Spotify Artist URL":{"name":"Spotify Artist URL","type":"button_url","value":"https://open.spotify.com/artist/58XGUNsRNu3cVOIOYk5chx"}},"uuid":"f63bb8e4-951a-4592-9957-a5bf9eb011e3"}]} -->
 <div class="wp-block-remote-data-blocks-kexp-top-100-2024 rdb-container"><!-- wp:remote-data-blocks/template -->
 <!-- wp:group {"metadata":{"categories":["Remote Data"],"patternName":"remote-data-blocks/kexp-top-100-spotify-link","name":"KEXP Top 100 Spotify Link"},"className":"spotify-link","layout":{"type":"constrained"}} -->
 <div class="wp-block-group spotify-link"><!-- wp:columns -->
@@ -167,12 +167,6 @@
 <p>No results found.</p>
 <!-- /wp:paragraph -->
 <!-- /wp:remote-data-blocks/no-results -->
-
-<!-- wp:remote-data-blocks/no-results {"mode":"error"} -->
-<!-- wp:paragraph -->
-<p>Error loading results.</p>
-<!-- /wp:paragraph -->
-<!-- /wp:remote-data-blocks/no-results --></div>
 <!-- /wp:remote-data-blocks/kexp-top-100-2024 -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>

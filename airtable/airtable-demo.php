@@ -32,6 +32,7 @@ function register_airtable(): void {
     $table_id = 'tblAJRx2nL9dymoS3';
 
     $data_source = AirtableDataSource::from_array( [
+		'service_config' => [
 			'__version' => 1,
             'enable_blocks' => false,
             'display_name' => 'KEXP Top 100',
@@ -78,6 +79,7 @@ function register_airtable(): void {
 					],
 				],
 			],
+		],
 	] );
 
 	$get_query = HttpQuery::from_array( [

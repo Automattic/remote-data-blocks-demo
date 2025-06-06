@@ -19,28 +19,28 @@ use RemoteDataBlocks\WpdbStorage\DataSourceCrud;
 use RemoteDataBlocks\Config\Query\HttpQuery;
 
 function register_airtable(): void {    
-    // Register the stylesheet so it's known to WordPress
-    wp_register_style(
-        'rdb-kexp-cover-style',
-        plugin_dir_url( __FILE__ ) . 'pattern-cover.css',
-        array(),
-        filemtime( plugin_dir_path( __FILE__ ) . 'pattern-cover.css' )
-    );
-    
-    $access_token = base64_decode('cGF0YXRRMVZzb3M5dWRsVjQuYmZjZmU3ZThjYmQ0OGMyOTIxMzFmMmIxMzgyOWFiY2ViMTkyMGZjOGY4NGM3YjAwZWZhZDlkMDdmNDIzMjI1OQ==');
-    $base_id = 'appsURUQQ9rdXTiHd';
-    $table_id = 'tblAJRx2nL9dymoS3';
+	// Register the stylesheet so it's known to WordPress
+	wp_register_style(
+		'rdb-kexp-cover-style',
+		plugin_dir_url( __FILE__ ) . 'pattern-cover.css',
+		array(),
+		filemtime( plugin_dir_path( __FILE__ ) . 'pattern-cover.css' )
+	);
 
-    $data_source = AirtableDataSource::from_array( [
+	$access_token = base64_decode('cGF0YXRRMVZzb3M5dWRsVjQuYmZjZmU3ZThjYmQ0OGMyOTIxMzFmMmIxMzgyOWFiY2ViMTkyMGZjOGY4NGM3YjAwZWZhZDlkMDdmNDIzMjI1OQ==');
+	$base_id = 'appsURUQQ9rdXTiHd';
+	$table_id = 'tblAJRx2nL9dymoS3';
+
+	$data_source = AirtableDataSource::from_array( [
 		'service_config' => [
 			'__version' => 1,
-            'enable_blocks' => false,
-            'display_name' => 'KEXP Top 100',
 			'access_token' => $access_token,
 			'base' => [
 				'id' => $base_id,
 				'name' => 'KEXP Top 100',
 			],
+			'enable_blocks' => false,
+			'display_name' => 'KEXP Top 100',
 			'tables' => [
 				[
 					'id' => $table_id,
@@ -167,16 +167,16 @@ function register_airtable(): void {
 		'render_query' => [
 			'query' => $get_query,
 		],
-        'patterns' => [
-            [
-                'title' => 'KEXP Top 100 Cover',
-                'html' => file_get_contents( __DIR__ . '/pattern-cover.html' ),
-            ],
-            [
-                'title' => 'KEXP Top 100 Spotify Link',
-                'html' => file_get_contents( __DIR__ . '/pattern-spotify-link.html' ),
-            ],
-        ],
+		'patterns' => [
+			[
+				'title' => 'KEXP Top 100 Cover',
+				'html' => file_get_contents( __DIR__ . '/pattern-cover.html' ),
+			],
+			[
+				'title' => 'KEXP Top 100 Spotify Link',
+				'html' => file_get_contents( __DIR__ . '/pattern-spotify-link.html' ),
+			],
+		],
 		'selection_queries' => [
 			[
 				'query' => $list_query,
@@ -190,14 +190,13 @@ function register_airtable(): void {
 		'render_query' => [
 			'query' => $list_query,
 		],
-        'patterns' => [
-            [
-                'title' => 'KEXP Top 100 Listing',
-                'html' => file_get_contents( __DIR__ . '/pattern-list.html' ),
-            ],
-        ],
+		'patterns' => [
+			[
+				'title' => 'KEXP Top 100 Listing',
+				'html' => file_get_contents( __DIR__ . '/pattern-list.html' ),
+			],
+		],
 	] );
-
 }
 
 add_action( 'init', __NAMESPACE__ . '\\register_airtable' );
@@ -206,7 +205,8 @@ add_action( 'init', __NAMESPACE__ . '\\register_airtable' );
  * Enqueues the shared stylesheet for the KEXP blocks (frontend and editor).
  */
 function enqueue_kexp_shared_block_assets(): void {
-    // Enqueue the style that was registered in register_airtable().
-    wp_enqueue_style( 'rdb-kexp-cover-style' );
+	// Enqueue the style that was registered in register_airtable().
+	wp_enqueue_style( 'rdb-kexp-cover-style' );
 }
+
 add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_kexp_shared_block_assets' );

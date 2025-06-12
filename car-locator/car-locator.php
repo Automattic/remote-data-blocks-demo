@@ -1,11 +1,12 @@
-<?php declare(strict_types = 1);
-
+<?php
 /**
  * Plugin Name: Car Locator
  * Description: Creates a custom block to be used with Remote Data Blocks to display car locations.
  * Version: 1.0.0
  * Author: WordPress VIP and Cascade AI
  */
+
+declare(strict_types = 1);
 
 namespace RemoteDataBlocksDemo\CarLocator;  
 

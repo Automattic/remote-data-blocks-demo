@@ -17,7 +17,7 @@ use RemoteDataBlocks\Config\Query\GraphqlQuery;
 use RemoteDataBlocks\Integrations\Shopify\ShopifyIntegration;
 use function add_action;
 
-require_once __DIR__ . '/ExampleShopifyDataSource.php';
+require_once __DIR__ . '/example-shopify-datasource.php';
 
 /**
  * Register the Shopify data source and blocks.

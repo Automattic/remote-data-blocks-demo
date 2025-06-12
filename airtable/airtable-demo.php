@@ -1,7 +1,4 @@
 <?php
-
-declare(strict_types=1);
-
 /**
  * Plugin Name: Airtable RDB Integration
  * Description: Creates a custom block to be used with Remote Data Blocks to display Airtable records
@@ -11,6 +8,8 @@ declare(strict_types=1);
  * Version: 1.0.0
  * Requires Plugins: remote-data-blocks
  */
+
+declare(strict_types=1);
 
 namespace RemoteDataBlocksDemo\Airtable;
 

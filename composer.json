@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "automattic/vipwpcs": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

@@ -10,7 +10,7 @@ declare(strict_types = 1);
 
 namespace RemoteDataBlocksDemo\CarLocator;
 
-include_once __DIR__ . '/class-car-locator.php';
+require_once __DIR__ . '/class-car-locator.php';
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;

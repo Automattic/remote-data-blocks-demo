@@ -8,7 +8,9 @@
 
 declare(strict_types = 1);
 
-namespace RemoteDataBlocksDemo\CarLocator;  
+namespace RemoteDataBlocksDemo\CarLocator;
+
+include_once __DIR__ . '/class-car-locator.php';
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
@@ -78,12 +80,3 @@ function register_leaflet_map_block(): void {
 	CarLocatorRegistry::$query = $car_location_query;
 }
 add_action( 'init', __NAMESPACE__ . '\\register_leaflet_map_block' );
-
-
-/**
- * Registry class to hold the car location query.
- */
-class CarLocatorRegistry {
-	/** @var \RemoteDataBlocks\Config\Query\HttpQuery|null */
-	public static $query = null;
-}

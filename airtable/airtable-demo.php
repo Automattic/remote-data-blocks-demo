@@ -15,7 +15,6 @@ declare(strict_types=1);
 namespace RemoteDataBlocksDemo\Airtable;
 
 use RemoteDataBlocks\Integrations\Airtable\AirtableDataSource;
-use RemoteDataBlocks\WpdbStorage\DataSourceCrud;
 use RemoteDataBlocks\Config\Query\HttpQuery;
 
 function register_airtable(): void {    
@@ -27,7 +26,7 @@ function register_airtable(): void {
 		filemtime( plugin_dir_path( __FILE__ ) . 'pattern-cover.css' )
 	);
 
-	$access_token = base64_decode('cGF0YXRRMVZzb3M5dWRsVjQuYmZjZmU3ZThjYmQ0OGMyOTIxMzFmMmIxMzgyOWFiY2ViMTkyMGZjOGY4NGM3YjAwZWZhZDlkMDdmNDIzMjI1OQ==');
+	$access_token = base64_decode( 'cGF0YXRRMVZzb3M5dWRsVjQuYmZjZmU3ZThjYmQ0OGMyOTIxMzFmMmIxMzgyOWFiY2ViMTkyMGZjOGY4NGM3YjAwZWZhZDlkMDdmNDIzMjI1OQ==' );
 	$base_id = 'appsURUQQ9rdXTiHd';
 	$table_id = 'tblAJRx2nL9dymoS3';
 
@@ -157,7 +156,7 @@ function register_airtable(): void {
 					'name' => 'Album',
 					'path' => '$.fields["Album"]',
 					'type' => 'string',
-				]
+				],
 			],
 		],
 	] );

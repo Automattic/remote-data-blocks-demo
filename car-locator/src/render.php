@@ -12,7 +12,7 @@ if ( ! $car_location_query instanceof \RemoteDataBlocks\Config\Query\HttpQuery )
 	<?php echo get_block_wrapper_attributes(); ?> >
 	<p>Car location data is currently unavailable.</p>	
 	</div>
-<?php
+	<?php
 	return;
 }
 

@@ -13,14 +13,6 @@ namespace RemoteDataBlocksDemo\CarLocator;
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
 
-/**
- * Registry class to hold the car location query.
- */
-class CarLocatorRegistry {
-	/** @var \RemoteDataBlocks\Config\Query\HttpQuery|null */
-	public static $query = null;
-}
-
 function register_leaflet_map_block(): void {
 
 	// Register the Leaflet script and stylesheet. The handles are referenced in
@@ -86,3 +78,12 @@ function register_leaflet_map_block(): void {
 	CarLocatorRegistry::$query = $car_location_query;
 }
 add_action( 'init', __NAMESPACE__ . '\\register_leaflet_map_block' );
+
+
+/**
+ * Registry class to hold the car location query.
+ */
+class CarLocatorRegistry {
+	/** @var \RemoteDataBlocks\Config\Query\HttpQuery|null */
+	public static $query = null;
+}

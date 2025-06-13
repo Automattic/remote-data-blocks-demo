@@ -1,7 +1,4 @@
 <?php
-
-declare(strict_types=1);
-
 /**
  * Plugin Name: 5e SRD Monsters RDB Example
  * Description: Creates a custom block to be used with Remote Data Blocks in order to retrieve artwork from the 5e SRD.
@@ -12,13 +9,14 @@ declare(strict_types=1);
  * Requires Plugins: remote-data-blocks
  */
 
+declare(strict_types=1);
+
 namespace RemoteDataBlocksDemo\SRDMonsters;
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
 
-function register_srd_block(): void
-{
+function register_srd_block(): void {
 	$srd_data_source = HttpDataSource::from_array([
 		'service_config' => [
 			'__version' => 1,
@@ -32,8 +30,8 @@ function register_srd_block(): void
 
 	$get_monster_query = HttpQuery::from_array([
 		'data_source' => $srd_data_source,
-		'endpoint' => function (array $input_variables) use ($srd_data_source): string {
-			return sprintf('%s/%s', $srd_data_source->get_endpoint(), $input_variables['index'] ?? '');
+		'endpoint' => function ( array $input_variables ) use ( $srd_data_source ): string {
+			return sprintf( '%s/%s', $srd_data_source->get_endpoint(), $input_variables['index'] ?? '' );
 		},
 		'input_schema' => [
 			'index' => [
@@ -55,7 +53,7 @@ function register_srd_block(): void
 				],
 				'image' => [
 					'name' => 'Image URL',
-					'generate' => function ($data): string {
+					'generate' => function ( $data ): string {
 						return 'https://www.dnd5eapi.co' . $data['image'];
 					},
 					'type' => 'image_url',
@@ -96,4 +94,4 @@ function register_srd_block(): void
 		],
 	]);
 }
-add_action('init', __NAMESPACE__ . '\\register_srd_block');
+add_action( 'init', __NAMESPACE__ . '\\register_srd_block' );

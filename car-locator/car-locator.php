@@ -1,5 +1,4 @@
-<?php declare(strict_types = 1);
-
+<?php
 /**
  * Plugin Name: Car Locator
  * Description: Creates a custom block to be used with Remote Data Blocks to display car locations.
@@ -7,18 +6,14 @@
  * Author: WordPress VIP and Cascade AI
  */
 
-namespace RemoteDataBlocksDemo\CarLocator;	
+declare(strict_types = 1);
+
+namespace RemoteDataBlocksDemo\CarLocator;
+
+require_once __DIR__ . '/class-car-locator.php';
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
-
-/**
- * Registry class to hold the car location query.
- */
-class CarLocatorRegistry {
-	/** @var \RemoteDataBlocks\Config\Query\HttpQuery|null */
-	public static $query = null;
-}
 
 function register_leaflet_map_block(): void {
 
@@ -33,7 +28,7 @@ function register_leaflet_map_block(): void {
 	
 	$car_location_data_source = HttpDataSource::from_array( [
 		'display_name' => 'Car Locations',
-		'endpoint' =>'https://dummyjson.com/c/8b75-8395-46b9-9633',
+		'endpoint' => 'https://dummyjson.com/c/8b75-8395-46b9-9633',
 		'request_headers' => [
 			'Content-Type' => 'application/json',
 		],
@@ -83,6 +78,5 @@ function register_leaflet_map_block(): void {
 	]);
 
 	CarLocatorRegistry::$query = $car_location_query;
-
 }
 add_action( 'init', __NAMESPACE__ . '\\register_leaflet_map_block' );

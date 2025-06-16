@@ -80,7 +80,7 @@
             "path": "/wordpress/wp-content/plugins/shopify-demo/ExampleShopifyDataSource.php",
             "data": {
                 "resource": "url",
-                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/ExampleShopifyDataSource.php"
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/example-shopify-datasource.php"
             }
         },
         {

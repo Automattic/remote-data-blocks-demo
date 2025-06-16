@@ -77,7 +77,7 @@
         },
         {
             "step": "writeFile",
-            "path": "/wordpress/wp-content/plugins/shopify-demo/ExampleShopifyDataSource.php",
+            "path": "/wordpress/wp-content/plugins/shopify-demo/example-shopify-datasource.php",
             "data": {
                 "resource": "url",
                 "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/shopify/example-shopify-datasource.php"

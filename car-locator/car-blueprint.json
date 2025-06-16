@@ -76,6 +76,14 @@
             }
         },
         {
+            "step": "writeFile",
+            "path": "/wordpress/wp-content/plugins/car-locator/class-car-locator.php",
+            "data": {
+                "resource": "url",
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/car-locator/class-car-locator.php"
+            }
+        },
+        {
             "step": "mkdir",
             "path": "/wordpress/wp-content/plugins/car-locator/build"
         },

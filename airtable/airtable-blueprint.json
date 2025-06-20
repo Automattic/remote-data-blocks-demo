@@ -53,14 +53,14 @@
         },
         {
             "step": "installPlugin",
-            "pluginData": {
-                "caption": "Installing RDB",
-                "resource": "url",
-                "url": "https://playground.wordpress.net/plugin-proxy.php?org=Automattic&repo=remote-data-blocks&workflow=Build Live Branch&artifact=remote-data-blocks-601&pr=601"
-            },
             "options": {
                 "activate": true,
                 "targetFolderName": "remote-data-blocks"
+            },
+            "pluginData": {
+                "caption": "Installing Remote Data Blocks",
+                "resource": "url",
+                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
             }
         },
         {
@@ -123,7 +123,7 @@
             "step": "importWxr",
             "file": {
                 "resource": "url",
-                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/testing-release/airtable/airtable-content.xml"
+                "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-content.xml"
             }
         },
         {

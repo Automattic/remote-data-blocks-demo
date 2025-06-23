@@ -34,7 +34,6 @@
         {
             "step": "defineWpConfigConsts",
             "consts": {
-                "USE_PLAYGROUND_CORS_PROXY": true,
                 "JETPACK_DEBUG": "true",
                 "JETPACK_DEV_DEBUG": "true",
                 "DNS_NS": 0
@@ -60,7 +59,7 @@
             "pluginData": {
                 "caption": "Installing Remote Data Blocks",
                 "resource": "url",
-                "url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+                "url": "https://playground.wordpress.net/plugin-proxy.php?repo=Automattic/remote-data-blocks&name=remote-data-blocks.zip"
             }
         },
         {
@@ -126,9 +125,5 @@
                 "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-content.xml"
             }
         },
-        {
-            "step": "wp-cli",
-            "command": "wp media import wordpress/wp-content/ty-segall-promo.jpg --post_id=2 --title='As photographed by Denée Segall' --featured_image"
-        }
     ]
 }

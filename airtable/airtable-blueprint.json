@@ -124,6 +124,6 @@
                 "resource": "url",
                 "url": "https://raw.githubusercontent.com/automattic/remote-data-blocks-demo/trunk/airtable/airtable-content.xml"
             }
-        },
+        }
     ]
 }

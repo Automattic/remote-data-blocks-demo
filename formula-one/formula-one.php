@@ -331,7 +331,7 @@ function formula_one_rdb_init(): void {
 		'endpoint' => function ( array $input_variables ) use ( $f1_data_source ): string {
 			$endpoint = $f1_data_source->get_endpoint() . '/teams';
 			if ( ! empty( $input_variables['team_id'] ) ) {
-				$endpoint .= '?id=' . rawurlencode( $input_variables['team_id'] );
+				$endpoint .= '?id=' . rawurlencode( strval( $input_variables['team_id'] ) );
 			}
 			return $endpoint;
 		},

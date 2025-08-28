@@ -137,7 +137,7 @@ function formula_one_rdb_init(): void {
 		'endpoint' => function ( array $input_variables ) use ( $f1_data_source ): string {
 			$endpoint = $f1_data_source->get_endpoint() . '/drivers';
 			if ( ! empty( $input_variables['driver_id'] ) ) {
-				$endpoint .= '?id=' . rawurlencode( $input_variables['driver_id'] );
+				$endpoint .= '?id=' . rawurlencode( strval( $input_variables['driver_id'] ) );
 			}
 			return $endpoint;
 		},

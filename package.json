@@ -11,7 +11,7 @@
     "package:map": "npm run build:map && npm-build-zip --source=./car-locator/build --destination=car-locator --name=car-locator --name_only=true"
   },
   "devDependencies": {
-    "@wordpress/scripts": "30.1.0",
+    "@wordpress/scripts": "33.0.0",
     "npm-build-zip": "^1.0.4"
   },
   "overrides": {
